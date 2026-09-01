@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Play Zone's 4 dedicated age group play zones: Baby Zone (0-2y), Explorer Zone (3-5y), Adventure Zone (6-8y), and Challenge Zone (9-12y).">
+  <title>Play Zones - Play Zone</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260828">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="../index.html" class="brand-logo" aria-label="Play Zone Home">
+          <div class="logo-symbol-block">
+            <div class="logo-line"><span>PLAY</span><span class="logo-sq-blue"></span></div>
+            <div class="logo-line"><span>ZONE</span><span class="logo-tri-yellow"></span><span class="logo-dot-red"></span></div>
+          </div>
+        </a>
+
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-item nav-dropdown" role="none">
+            <a href="../index.html" class="nav-link" role="menuitem">
+              Home <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="../index.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-shapes" style="color: var(--accent-red);"></i> Home 1</a>
+              <a href="../index1.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-rocket" style="color: var(--primary-blue);"></i> Home 2</a>
+            </div>
+          </li>
+          <li class="nav-item" role="none"><a href="play-zones.html" class="nav-link active" role="menuitem">Play Zones</a></li>
+          <li class="nav-item" role="none"><a href="birthday-parties.html" class="nav-link" role="menuitem">Birthday Parties</a></li>
+          <li class="nav-item" role="none"><a href="membership-plans.html" class="nav-link" role="menuitem">Membership Plans</a></li>
+          <li class="nav-item" role="none"><a href="safety-standards.html" class="nav-link" role="menuitem">Safety Standards</a></li>
+          <li class="nav-item" role="none"><a href="dashboard.html" class="nav-link" role="menuitem">Dashboard</a></li>
+          <li class="nav-item nav-dropdown" role="none">
+            <a href="#" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              Pages <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i>
+            </a>
+            <div class="nav-dropdown-menu dropdown-align-right" role="menu">
+              <a href="about.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-info-circle" style="color: var(--primary-blue);"></i> About Us</a>
+              <a href="contact.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-envelope" style="color: var(--accent-red);"></i> Contact</a>
+              <a href="coming-soon.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-clock" style="color: var(--accent-yellow);"></i> Coming Soon</a>
+              <a href="404.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-exclamation-triangle" style="color: var(--accent-red);"></i> 404</a>
+              <a href="privacy.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-shield-alt" style="color: var(--accent-green);"></i> Privacy Policy</a>
+              <a href="terms.html" class="nav-dropdown-link" role="menuitem"><i class="fas fa-file-contract" style="color: var(--primary-blue);"></i> Terms &amp; Conditions</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="header-actions">
+          <button type="button" class="icon-control-btn theme-toggle-btn" aria-label="Toggle Dark / Light Mode"><i class="fas fa-moon"></i></button>
+          <div class="dir-toggle-pill" role="group" aria-label="Direction Switcher (LTR / RTL)">
+            <button type="button" class="dir-btn active" data-dir="ltr" title="Left to Right Layout">LTR</button>
+            <button type="button" class="dir-btn" data-dir="rtl" title="Right to Left Layout">RTL</button>
+          </div>
+          <a href="signin.html" class="btn btn-primary-blue btn-sm">SIGN IN</a>
+          <button type="button" class="mobile-nav-btn" aria-label="Open Navigation Menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Menu">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="../index.html" class="brand-logo">
+          <div class="logo-symbol-block">
+            <div class="logo-line"><span>PLAY</span><span class="logo-sq-blue"></span></div>
+            <div class="logo-line"><span>ZONE</span><span class="logo-tri-yellow"></span><span class="logo-dot-red"></span></div>
+          </div>
+        </a>
+        <button type="button" class="mobile-drawer-close" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+      </div>
+      <nav class="mobile-drawer-links">
+        <a href="../index.html">Home 1</a>
+        <a href="../index1.html">Home 2</a>
+        <a href="play-zones.html" class="active">Play Zones</a>
+        <a href="birthday-parties.html">Birthday Parties</a>
+        <a href="membership-plans.html">Membership Plans</a>
+        <a href="safety-standards.html">Safety Standards</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="coming-soon.html">Coming Soon</a>
+        <a href="404.html">404</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+    <div class="mobile-drawer-actions">
+      <a href="signin.html" class="btn btn-primary-blue btn-block">SIGN IN</a>
+      <a href="signup.html" class="btn btn-outline-red btn-block">SIGN UP</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- Breadcrumb Banner -->
+    <section style="background-color: var(--primary-blue-subtle); padding: 3.5rem 0; border-bottom: 1px solid var(--border-color-subtle);">
+      <div class="container" style="text-align: center;">
+        <span class="section-tag">Developmentally Engineered Spaces</span>
+        <h1 style="font-size: clamp(2.25rem, 4vw, 3.25rem); font-weight: 900; margin-bottom: 0.75rem; text-transform: uppercase;">
+          OUR 4 DEDICATED PLAY ZONES
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--neutral-600); max-width: 650px; margin: 0 auto;">
+          Every zone is strictly age-segregated, ensuring that infants crawl peacefully while older kids conquer high-energy obstacles with zero collisions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Zone 1: Baby Zone (0-2 Yrs) -->
+    <section id="baby-zone" class="section-padding" style="background-color: var(--bg-page); border-bottom: 1px solid var(--border-color-subtle);">
+      <div class="container">
+        <div class="zone-showcase-row">
+          <div>
+            <div style="width: 100%; max-width: 440px; height: 380px; background-color: var(--accent-yellow); border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+              <img src="../assets/images/baby-zone.jpg" alt="Baby Zone soft sensory play" class="zone-showcase-image">
+            </div>
+          </div>
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom: 0.75rem; font-size: 0.85rem;">AGES 0 – 2 YEARS</span>
+            <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1rem;">BABY ZONE (SENSORY OASIS)</h2>
+            <p style="font-size: 1.05rem; color: var(--neutral-600); margin-bottom: 1.5rem;">
+              A calm, fully-padded sanctuary designed for crawlers, cruisers, and early walkers. Features non-toxic sensory tactile walls, low soft foam inclines, and an exclusive baby ball pool.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-yellow-hover);"></i> Low height foam mirrors &amp; musical walls
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-yellow-hover);"></i> Gated entry preventing older children from entering
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-yellow-hover);"></i> Daily UV sterilized soft plush toys
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-yellow-hover);"></i> Dedicated nursing and diaper care suite adjacent
+              </li>
+            </ul>
+            <div class="btn-group-responsive">
+              <a href="dashboard.html?zone=baby#booking-tab" class="btn btn-primary-red">Book Baby Session ($15)</a>
+              <a href="safety-standards.html" class="btn btn-outline-blue">Safety Protocols</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zone 2: Explorer Zone (3-5 Yrs) -->
+    <section id="explorer-zone" class="section-padding" style="background-color: var(--bg-surface-alt); border-bottom: 1px solid var(--border-color-subtle);">
+      <div class="container">
+        <div class="zone-showcase-row">
+          <div style="order: 2;">
+            <div style="width: 100%; max-width: 440px; height: 380px; background-color: var(--primary-blue-light); border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+              <img src="../assets/images/explorer-zone.jpg" alt="Explorer Zone building blocks" class="zone-showcase-image">
+            </div>
+          </div>
+          <div style="order: 1;">
+            <span class="badge badge-blue" style="margin-bottom: 0.75rem; font-size: 0.85rem;">AGES 3 – 5 YEARS</span>
+            <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1rem;">EXPLORER ZONE (IMAGINATION TOWN)</h2>
+            <p style="font-size: 1.05rem; color: var(--neutral-600); margin-bottom: 1.5rem;">
+              Preschoolers develop motor coordination and imaginative roleplay through mini spiral slides, soft building foam bricks, and a miniature pretend marketplace.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--primary-blue);"></i> Double wave slide with deceleration landing pads
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--primary-blue);"></i> Giant lightweight interlocking architectural foam bricks
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--primary-blue);"></i> Pretend play fire station, supermarket &amp; ice cream van
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--primary-blue);"></i> 1:6 Coach-to-child supervision ratio
+              </li>
+            </ul>
+            <div class="btn-group-responsive">
+              <a href="dashboard.html?zone=explorer#booking-tab" class="btn btn-primary-blue">Book Explorer Session ($18)</a>
+              <a href="birthday-parties.html" class="btn btn-outline-blue">View Party Suites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zone 3: Adventure Zone (6-8 Yrs) -->
+    <section id="adventure-zone" class="section-padding" style="background-color: var(--bg-page); border-bottom: 1px solid var(--border-color-subtle);">
+      <div class="container">
+        <div class="zone-showcase-row">
+          <div>
+            <div style="width: 100%; max-width: 440px; height: 380px; background-color: var(--accent-red-light); border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+              <img src="../assets/images/adventure-zone.jpg" alt="Adventure Zone climbing wall" class="zone-showcase-image">
+            </div>
+          </div>
+          <div>
+            <span class="badge badge-red" style="margin-bottom: 0.75rem; font-size: 0.85rem;">AGES 6 – 8 YEARS</span>
+            <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1rem;">ADVENTURE ZONE (NINJA CRUISE)</h2>
+            <p style="font-size: 1.05rem; color: var(--neutral-600); margin-bottom: 1.5rem;">
+              High-action playground built for energetic elementary schoolers! Featuring climbing boulders, rope bridges, foam pit jumps, and a 3-level ninja crawl.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-red);"></i> 14-foot traverse bouldering rock wall with safety mattresses
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-red);"></i> Suspended wobble balance bridges &amp; monkey bar bridges
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-red);"></i> 20-foot drop spiral slide with transparent acrylic curves
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-red);"></i> Certified CPR/First-Aid playground marshals active
+              </li>
+            </ul>
+            <div class="btn-group-responsive">
+              <a href="dashboard.html?zone=adventure#booking-tab" class="btn btn-primary-red">Book Adventure Session ($20)</a>
+              <a href="safety-standards.html" class="btn btn-outline-blue">Equipment Specs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zone 4: Challenge Zone (9-12 Yrs) -->
+    <section id="challenge-zone" class="section-padding" style="background-color: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="zone-showcase-row">
+          <div style="order: 2;">
+            <div style="width: 100%; max-width: 440px; height: 380px; background-color: #EAF2FF; border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+              <img src="../assets/images/challenge-zone.jpg" alt="Challenge Zone obstacle course" class="zone-showcase-image">
+            </div>
+          </div>
+          <div style="order: 1;">
+            <span class="badge badge-green" style="margin-bottom: 0.75rem; font-size: 0.85rem;">AGES 9 – 12 YEARS</span>
+            <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1rem;">CHALLENGE ZONE (SKY ARENA)</h2>
+            <p style="font-size: 1.05rem; color: var(--neutral-600); margin-bottom: 1.5rem;">
+              Tailored for pre-teens seeking physical challenges and teamwork! Timed agility runs, high rope traverses, air-hockey arenas, and fast-action obstacle runs.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Electronic timed ninja sprint obstacle course
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Spider-web vertical climbing tower
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Olympic grade foam jump dismount pits
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Arcade &amp; interactive digital target wall games
+              </li>
+            </ul>
+            <div class="btn-group-responsive">
+              <a href="dashboard.html?zone=challenge#booking-tab" class="btn btn-primary-blue">Book Challenge Session ($22)</a>
+              <a href="membership-plans.html" class="btn btn-outline-red">Get Unlimited Pass</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand & Details -->
+        <div class="footer-col">
+          <a href="../index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-symbol-block">
+              <div class="logo-line"><span>PLAY</span><span class="logo-sq-blue"></span></div>
+              <div class="logo-line"><span>ZONE</span><span class="logo-tri-yellow"></span><span class="logo-dot-red"></span></div>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--neutral-600); margin-bottom: 1.25rem; line-height: 1.6;">
+            Bauhaus-inspired indoor play wonderland &amp; family activity center designed for children ages 0 to 12. Safe, hygienic, and certified.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle fb" aria-label="Play Zone on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle ig" aria-label="Play Zone on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-circle yt" aria-label="Play Zone on YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <ul class="footer-contact-details">
+            <li><i class="fas fa-phone-alt"></i> <span>+91 1234 567 890</span></li>
+            <li><i class="fas fa-envelope"></i> <span>hello@playzone.com</span></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span>123 Play Street, Fun City, 560001</span></li>
+          </ul>
+        </div>
+        <!-- Col 2: Explore & Play -->
+        <div class="footer-col">
+          <h4>EXPLORE &amp; PLAY</h4>
+          <ul class="footer-nav-list">
+            <li><a href="../index.html">Home 1</a></li>
+            <li><a href="../index1.html">Home 2</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership-plans.html">Membership Plans</a></li>
+            <li><a href="safety-standards.html">Safety Standards</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Parent Portal -->
+        <div class="footer-col">
+          <h4>PARENT PORTAL</h4>
+          <ul class="footer-nav-list">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company & Legal -->
+        <div class="footer-col">
+          <h4>COMPANY &amp; LEGAL</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
+            <li><a href="404.html">404</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-sub-bar">
+        <div>&copy; 2026 Play Zone. All rights reserved.</div>
+        <div class="footer-sub-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span>|</span>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

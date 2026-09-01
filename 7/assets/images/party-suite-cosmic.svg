@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <!-- Cosmic Space Party Suite -->
+  <defs>
+    <radialGradient id="bgCosmic" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="cakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="50%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#bgCosmic)"/>
+
+  <!-- Neon Cosmic Room Floor -->
+  <polygon points="0,225 300,225 300,300 0,300" fill="#090D16"/>
+  <line x1="0" y1="225" x2="300" y2="225" stroke="#38BDF8" stroke-width="3" opacity="0.6"/>
+  <line x1="50" y1="225" x2="10" y2="300" stroke="#38BDF8" stroke-width="1.5" opacity="0.3"/>
+  <line x1="150" y1="225" x2="150" y2="300" stroke="#38BDF8" stroke-width="1.5" opacity="0.3"/>
+  <line x1="250" y1="225" x2="290" y2="300" stroke="#38BDF8" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Wall Cosmic Projections & Stars -->
+  <circle cx="60" cy="65" r="2.5" fill="#FDE047"/>
+  <circle cx="95" cy="40" r="1.5" fill="#FFFFFF"/>
+  <circle cx="230" cy="55" r="2.5" fill="#38BDF8"/>
+  <circle cx="270" cy="80" r="2" fill="#F472B6"/>
+  <circle cx="150" cy="35" r="2" fill="#FFFFFF"/>
+
+  <!-- Glowing Neon Ring Planet on wall -->
+  <circle cx="235" cy="90" r="26" fill="#4338CA" opacity="0.7"/>
+  <ellipse cx="235" cy="90" rx="42" ry="10" fill="none" stroke="#38BDF8" stroke-width="4" transform="rotate(-20 235 90)"/>
+
+  <!-- Rocket Neon Balloon (Left) -->
+  <path d="M 45 105 Q 55 75 70 85 Q 85 95 65 125 Z" fill="#EF4444"/>
+  <polygon points="40,115 50,110 44,128" fill="#F59E0B"/>
+  <polygon points="68,90 75,98 84,92" fill="#F59E0B"/>
+  <circle cx="58" cy="98" r="6" fill="#38BDF8"/>
+  <line x1="55" y1="125" x2="50" y2="185" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Star Balloon (Right) -->
+  <polygon points="205,75 210,88 224,90 213,99 216,113 205,106 193,113 196,99 186,90 199,88" fill="#FACC15"/>
+  <line x1="205" y1="113" x2="210" y2="185" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Bunting / Party Flags Banner -->
+  <path d="M 15 45 Q 150 75 285 45" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="3,3"/>
+  <polygon points="40,49 55,52 47,68" fill="#38BDF8"/>
+  <polygon points="75,55 90,58 82,74" fill="#EC4899"/>
+  <polygon points="110,60 125,62 117,78" fill="#FBBF24"/>
+  <polygon points="145,63 160,63 152,79" fill="#10B981"/>
+  <polygon points="180,61 195,59 187,76" fill="#8B5CF6"/>
+  <polygon points="215,57 230,54 222,72" fill="#F43F5E"/>
+  <polygon points="250,52 265,49 257,67" fill="#06B6D4"/>
+
+  <!-- Party Buffet Table with Glowing Runner -->
+  <rect x="65" y="185" width="170" height="50" rx="6" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+  <rect x="75" y="192" width="150" height="6" fill="url(#neonGlow)"/>
+
+  <!-- Multi-Tier Birthday Cake in Center -->
+  <!-- Cake Base Tier -->
+  <rect x="120" y="160" width="60" height="26" rx="4" fill="url(#cakeGrad)"/>
+  <rect x="120" y="160" width="60" height="6" fill="#FFF1F2"/>
+  <!-- Cake Top Tier -->
+  <rect x="132" y="140" width="36" height="20" rx="3" fill="#38BDF8"/>
+  <rect x="132" y="140" width="36" height="5" fill="#FFFFFF"/>
+  <!-- Glowing Birthday Candle -->
+  <rect x="148" y="128" width="4" height="12" fill="#FDE047"/>
+  <ellipse cx="150" cy="122" rx="4" ry="7" fill="#F97316"/>
+  <ellipse cx="150" cy="123" rx="2" ry="4" fill="#FEF08A"/>
+
+  <!-- Gift Boxes Beside Table -->
+  <rect x="25" y="210" width="32" height="32" rx="3" fill="#8B5CF6"/>
+  <rect x="38" y="210" width="6" height="32" fill="#FDE047"/>
+  <rect x="25" y="222" width="32" height="6" fill="#FDE047"/>
+  <ellipse cx="41" cy="208" rx="7" ry="4" fill="#FDE047"/>
+
+  <rect x="242" y="215" width="28" height="28" rx="3" fill="#EC4899"/>
+  <rect x="253" y="215" width="5" height="28" fill="#38BDF8"/>
+  <rect x="242" y="226" width="28" height="5" fill="#38BDF8"/>
+</svg>
