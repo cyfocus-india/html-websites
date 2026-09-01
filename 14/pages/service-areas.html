@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MoveMate serves homes and commercial clients across 1,000+ Indian cities and towns with seamless local and intercity connectivity.">
+  <meta name="theme-color" content="#075fd7">
+  <title>Service Areas — MoveMate</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main-content">
+    <section class="subhero areas-hero">
+      <div class="container subhero-grid">
+        <div>
+          <span class="eyebrow">Nationwide Network</span>
+          <h1>Moving You Everywhere Across India</h1>
+          <p>From metro cities to tier-2 hubs and growing towns, our extensive logistics network ensures safe, reliable door-to-door relocation across all major Indian regions.</p>
+          <div class="feature-quads">
+            <div class="feature-quad">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              </span>
+              <span><strong>Pan-India</strong><small>1,000+ Cities</small></span>
+            </div>
+            <div class="feature-quad">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.6 2.8 8.1 7 10 4.2-1.9 7-5.4 7-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <span><strong>Verified Crews</strong><small>Direct network</small></span>
+            </div>
+            <div class="feature-quad">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </span>
+              <span><strong>Daily Routes</strong><small>Scheduled transit</small></span>
+            </div>
+            <div class="feature-quad">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.65 2.62a2 2 0 0 1-.45 2.11L8.04 9.72a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.31 1.72.53 2.62.65A2 2 0 0 1 22 16.92Z"/></svg>
+              </span>
+              <span><strong>24/7 Support</strong><small>Live tracking</small></span>
+            </div>
+          </div>
+        </div>
+        <div class="subhero-art">
+          <picture>
+            <source srcset="../assets/images/hero-service-areas.webp" type="image/webp">
+            <img src="../assets/images/hero-service-areas.png" alt="Map of India with location pins, moving truck and boxes" width="1672" height="941" fetchpriority="high">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage Map and City Browser -->
+    <section class="section-tight">
+      <div class="container coverage-layout reveal">
+        <div class="coverage-map">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+            <div>
+              <span class="eyebrow" style="margin-bottom:2px">Live GPS Fleet Network</span>
+              <h2 style="font-size:1.35rem;margin:0">Interactive Coverage Map</h2>
+            </div>
+            <span class="paid-pill" style="font-size:0.75rem">14 Regional Hubs Active</span>
+          </div>
+          <p style="font-size:0.88rem;margin:6px 0 10px;color:var(--text)">Click any hub marker or route below to inspect real-time fleet density, direct dispatch lines and local coverage radius.</p>
+          
+          <div class="map-toolbar">
+            <div class="tabs" style="margin:0;padding:0;border:0;gap:4px">
+              <button class="tab-btn active" type="button" data-map-filter="all" style="padding:4px 10px;font-size:0.78rem">All India</button>
+              <button class="tab-btn" type="button" data-map-filter="north" style="padding:4px 10px;font-size:0.78rem">North</button>
+              <button class="tab-btn" type="button" data-map-filter="west" style="padding:4px 10px;font-size:0.78rem">West</button>
+              <button class="tab-btn" type="button" data-map-filter="south" style="padding:4px 10px;font-size:0.78rem">South</button>
+              <button class="tab-btn" type="button" data-map-filter="east" style="padding:4px 10px;font-size:0.78rem">East</button>
+            </div>
+            <button class="btn btn-ghost btn-sm" data-map-reset type="button" style="padding:4px 10px;font-size:0.78rem">Reset View</button>
+          </div>
+
+          <!-- Live Leaflet Canvas -->
+          <div id="serviceAreaLiveMap" aria-label="Interactive Pan-India relocation coverage map"></div>
+
+          <div class="map-badge">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </span>
+            <span><strong>1,000+ Cities &amp; Towns</strong><br><small>Direct door-to-door network</small></span>
+          </div>
+        </div>
+
+        <div class="cities-panel">
+          <span class="eyebrow" style="margin-bottom:2px">City Directory</span>
+          <h3>Top Cities &amp; Regions We Serve</h3>
+          <p style="font-size:0.86rem;color:var(--text);margin-top:4px">Click any city name to fly the live map directly to that regional hub.</p>
+          
+          <!-- Live Instant Search Bar -->
+          <div class="city-search-wrap">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input id="citySearchInput" type="search" placeholder="Search any city (e.g. Bengaluru, Pune, Delhi)..." aria-label="Search city name">
+          </div>
+
+          <!-- Regional Tabs -->
+          <div class="tabs" role="tablist" aria-label="Filter cities by region">
+            <button class="tab-btn active" type="button" data-region="all">All Cities</button>
+            <button class="tab-btn" type="button" data-region="north">North India</button>
+            <button class="tab-btn" type="button" data-region="west">West India</button>
+            <button class="tab-btn" type="button" data-region="south">South India</button>
+            <button class="tab-btn" type="button" data-region="east">East India</button>
+          </div>
+
+          <!-- City List Columns -->
+          <div class="city-columns">
+            <ul data-city-region="north">
+              <li>Delhi NCR</li>
+              <li>Gurugram</li>
+              <li>Noida / Greater Noida</li>
+              <li>Ghaziabad</li>
+              <li>Faridabad</li>
+              <li>Chandigarh</li>
+              <li>Jaipur</li>
+              <li>Lucknow</li>
+              <li>Dehradun</li>
+              <li>Agra</li>
+            </ul>
+            <ul data-city-region="west">
+              <li>Mumbai</li>
+              <li>Pune</li>
+              <li>Thane</li>
+              <li>Navi Mumbai</li>
+              <li>Nagpur</li>
+              <li>Nashik</li>
+              <li>Ahmedabad</li>
+              <li>Surat</li>
+              <li>Vadodara</li>
+              <li>Goa</li>
+            </ul>
+            <ul data-city-region="south">
+              <li>Bengaluru</li>
+              <li>Hyderabad</li>
+              <li>Chennai</li>
+              <li>Coimbatore</li>
+              <li>Kochi</li>
+              <li>Madurai</li>
+              <li>Vijayawada</li>
+              <li>Visakhapatnam</li>
+              <li>Thiruvananthapuram</li>
+              <li>Mysuru</li>
+            </ul>
+            <ul data-city-region="east">
+              <li>Kolkata</li>
+              <li>Siliguri</li>
+              <li>Patna</li>
+              <li>Ranchi</li>
+              <li>Bhubaneswar</li>
+              <li>Guwahati</li>
+              <li>Agartala</li>
+              <li>Jamshedpur</li>
+              <li>Cuttack</li>
+              <li>Durgapur</li>
+            </ul>
+          </div>
+
+          <div class="city-help">
+            <div>
+              <strong>Can’t find your city or pincode?</strong><br>
+              <small>We connect remote and tier-3 towns. Ask our relocation desk for custom route feasibility.</small>
+            </div>
+            <a class="btn btn-primary btn-sm" href="contact.html">
+              <span>Check Availability</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section-tight">
+      <div class="container cta-panel reveal">
+        <div>
+          <span class="eyebrow">Local &amp; Long Distance</span>
+          <h2>We’re Closer Than You Think!</h2>
+          <p>No matter where your journey starts or ends, we are ready to move you with care.</p>
+        </div>
+        <button class="btn btn-primary quote-open" type="button">
+          <span>Get a Free Quote</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calculate a transparent, instant home shifting estimate with MoveMate's interactive live pricing calculator.">
+  <meta name="theme-color" content="#075fd7">
+  <title>Pricing — MoveMate</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main-content">
+    <div class="container calc-header">
+      <div class="calc-title">
+        <span class="feature-icon" style="width:64px;height:64px" aria-hidden="true">
+          <svg viewBox="0 0 24 24" style="width:30px;height:30px"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M7 5h10v4H7zM8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01M16 17h.01"/></svg>
+        </span>
+        <div>
+          <h1>Instant Pricing Calculator</h1>
+          <p>Get a real-time, transparent breakdown for your relocation in seconds.</p>
+        </div>
+      </div>
+      <picture>
+        <source srcset="../assets/images/pricing-calculator.webp" type="image/webp">
+        <img class="calc-header-art" src="../assets/images/pricing-calculator.png" alt="Blue calculator, moving box and coins" width="1254" height="1254">
+      </picture>
+    </div>
+
+    <section class="section-tight" style="padding-top:10px">
+      <div class="container calculator-layout">
+        <!-- Interactive Form Panel -->
+        <form class="form-panel" id="calculatorForm" novalidate>
+          <div class="form-section">
+            <div class="form-section-title">
+              <span class="step-num">1</span>
+              <h3>Move Type &amp; Locations</h3>
+            </div>
+            <span class="field-label">Select Move Category</span>
+            <div class="choice-grid" style="margin-top:8px">
+              <label class="choice-card">
+                <input type="radio" name="moveType" value="local" checked>
+                <span class="choice-body">Local Shifting</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="moveType" value="intercity">
+                <span class="choice-body">Intercity Relocation</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="moveType" value="office">
+                <span class="choice-body">Office Shifting</span>
+              </label>
+            </div>
+            <div class="field-grid" style="margin-top:16px">
+              <div class="field">
+                <label for="pickup">Pickup City / Area</label>
+                <input id="pickup" data-required-calc placeholder="E.g. Indiranagar, Bengaluru">
+                <span class="error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="delivery">Delivery City / Area</label>
+                <input id="delivery" data-required-calc placeholder="E.g. HSR Layout, Bengaluru">
+                <span class="error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="field" style="margin-top:14px">
+              <label for="moveDate">Preferred Move Date</label>
+              <input id="moveDate" data-required-calc type="date">
+              <span class="error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">
+              <span class="step-num">2</span>
+              <h3>Home / Space Size</h3>
+              <small>Select the closest match</small>
+            </div>
+            <div class="choice-grid four">
+              <label class="choice-card home-choice">
+                <input type="radio" name="homeSize" value="studio" checked>
+                <span class="choice-body">
+                  <span class="home-icon">1</span>
+                  <strong>1 BHK / Studio</strong>
+                  <small>Few items</small>
+                </span>
+              </label>
+              <label class="choice-card home-choice">
+                <input type="radio" name="homeSize" value="2bhk">
+                <span class="choice-body">
+                  <span class="home-icon">2</span>
+                  <strong>2 BHK</strong>
+                  <small>Standard items</small>
+                </span>
+              </label>
+              <label class="choice-card home-choice">
+                <input type="radio" name="homeSize" value="3bhk">
+                <span class="choice-body">
+                  <span class="home-icon">3</span>
+                  <strong>3 BHK</strong>
+                  <small>Family items</small>
+                </span>
+              </label>
+              <label class="choice-card home-choice">
+                <input type="radio" name="homeSize" value="4bhk">
+                <span class="choice-body">
+                  <span class="home-icon">4+</span>
+                  <strong>4 BHK or More</strong>
+                  <small>Large move</small>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">
+              <span class="step-num">3</span>
+              <h3>Additional Services</h3>
+              <small>Optional add-ons</small>
+            </div>
+            <div class="extra-grid">
+              <label class="extra-check">
+                <input type="checkbox" name="extras" value="packing">
+                <span>
+                  <strong>Full Packing</strong>
+                  <small>5-ply materials</small>
+                </span>
+              </label>
+              <label class="extra-check">
+                <input type="checkbox" name="extras" value="loading" checked>
+                <span>
+                  <strong>Loading</strong>
+                  <small>Dedicated crew</small>
+                </span>
+              </label>
+              <label class="extra-check">
+                <input type="checkbox" name="extras" value="unloading" checked>
+                <span>
+                  <strong>Unloading</strong>
+                  <small>At destination</small>
+                </span>
+              </label>
+              <label class="extra-check">
+                <input type="checkbox" name="extras" value="unpacking">
+                <span>
+                  <strong>Unpacking</strong>
+                  <small>Room arrangement</small>
+                </span>
+              </label>
+              <label class="extra-check">
+                <input type="checkbox" name="extras" value="car">
+                <span>
+                  <strong>Vehicle Transport</strong>
+                  <small>Car / 2-wheeler carrier</small>
+                </span>
+              </label>
+              <label class="extra-check">
+                <input type="checkbox" name="extras" value="storage">
+                <span>
+                  <strong>Secure Storage</strong>
+                  <small>Short-term warehouse</small>
+                </span>
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-primary full" style="margin-top:22px" type="submit">
+            <span>Calculate Instant Estimate</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+
+        <!-- Sticky Price Breakdown Panel -->
+        <aside class="price-panel" aria-live="polite">
+          <div class="card-top">
+            <h3>Estimated Price</h3>
+            <span class="paid-pill">✓ 100% Transparent</span>
+          </div>
+          <div class="price-hero">
+            <small>Estimated Grand Total</small>
+            <strong data-estimate-total>₹8,791</strong>
+            <small>Inclusive of 18% GST • No hidden fees</small>
+          </div>
+          <h3 style="font-size:1.05rem;margin-bottom:12px">Itemized Breakdown</h3>
+          <table class="pricing-table">
+            <tbody>
+              <tr><td>Professional Packing</td><td data-price-packing>₹0</td></tr>
+              <tr><td>Loading Charges</td><td data-price-loading>₹1,200</td></tr>
+              <tr><td>Transport Freight</td><td data-price-transport>₹4,600</td></tr>
+              <tr><td>Destination Unloading</td><td data-price-unloading>₹1,200</td></tr>
+              <tr><td>Tolls, Insurance &amp; Handling</td><td data-price-other>₹650</td></tr>
+              <tr><td>Subtotal</td><td data-price-subtotal>₹7,650</td></tr>
+              <tr><td>GST (18%)</td><td data-price-gst>₹1,377</td></tr>
+              <tr class="total"><td>Total Estimate</td><td data-estimate-total>₹9,027</td></tr>
+            </tbody>
+          </table>
+          <button class="btn btn-primary full" style="margin-top:18px" type="button" data-book-calc-estimate>
+            <span>Book With This Estimate</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <div class="benefit-row" style="grid-template-columns:1fr 1fr;margin-top:16px">
+            <div class="benefit-item" style="padding:12px 14px">
+              <span class="feature-icon" style="width:34px;height:34px;font-size:0.78rem">0</span>
+              <span><strong>Fixed Rate</strong><small>No surprise bills</small></span>
+            </div>
+            <div class="benefit-item" style="padding:12px 14px">
+              <span class="feature-icon" style="width:34px;height:34px;font-size:0.78rem">24</span>
+              <span><strong>24/7 Help</strong><small>Move coordinator</small></span>
+            </div>
+          </div>
+          <p class="center" style="margin-top:14px;margin-bottom:0">
+            <small>Estimate is based on standard inventory volume. Exact final quote is locked after physical or video survey.</small>
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

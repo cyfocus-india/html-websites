@@ -1,0 +1,377 @@
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f0f6fc;
+  --text: #c2d1e4;
+  --muted: #8b9eb5;
+  --line: #1e3550;
+  --line-light: #162a42;
+  --surface: #0a1f36;
+  --surface-2: #07172a;
+  --surface-3: #0f2844;
+  --navy: #030d1a;
+  --navy-light: #081d33;
+  --brand-3: #13345a;
+  --brand-light: #0d2a4a;
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.28);
+  --shadow: 0 14px 38px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 24px 56px rgba(0, 0, 0, 0.48);
+  --shadow-brand: 0 12px 28px rgba(7, 95, 215, 0.35);
+}
+
+html[data-theme="dark"] body {
+  background: #061628;
+}
+
+html[data-theme="dark"] .site-header {
+  background: rgba(8, 26, 46, 0.92);
+  border-bottom-color: rgba(30, 53, 80, 0.9);
+}
+
+html[data-theme="dark"] .site-header.scrolled {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .hero::before,
+html[data-theme="dark"] .subhero,
+html[data-theme="dark"] .soft-blue {
+  background: radial-gradient(circle at 75% 15%, #153c66 0%, transparent 40%), linear-gradient(135deg, #061628 0%, #0a213a 100%);
+}
+
+html[data-theme="dark"] .trust-pill {
+  background: #113357;
+  border-color: #1d4b7c;
+  color: #72b6ff;
+}
+
+html[data-theme="dark"] .btn-outline {
+  background: #0a223c;
+  border-color: #23476d;
+  color: #e6f0fa;
+}
+
+html[data-theme="dark"] .btn-outline:hover {
+  background: #113459;
+  border-color: var(--brand-2);
+  color: #7bbaff;
+}
+
+html[data-theme="dark"] .icon-btn {
+  background: #0b223c;
+  border-color: #1e3a5a;
+  color: #e6f0fa;
+}
+
+html[data-theme="dark"] .icon-btn:hover {
+  background: #12365c;
+  border-color: var(--brand-2);
+  color: #7bbaff;
+}
+
+html[data-theme="dark"] .dropdown-menu {
+  background: #091e34;
+  border-color: var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .dropdown-link {
+  color: #e6f0fa;
+}
+
+html[data-theme="dark"] .dropdown-link:hover,
+html[data-theme="dark"] .dropdown-link.active {
+  background: #113459;
+  color: #7bbaff;
+}
+
+html[data-theme="dark"] .service-card:nth-child(n),
+html[data-theme="dark"] .cost-card,
+html[data-theme="dark"] .story-card,
+html[data-theme="dark"] .route-form-panel,
+html[data-theme="dark"] .journey-panel,
+html[data-theme="dark"] .cta-panel,
+html[data-theme="dark"] .coverage-map,
+html[data-theme="dark"] .support-card,
+html[data-theme="dark"] .content-card,
+html[data-theme="dark"] .form-panel,
+html[data-theme="dark"] .price-panel,
+html[data-theme="dark"] .track-panel,
+html[data-theme="dark"] .invoice-summary,
+html[data-theme="dark"] .contact-item,
+html[data-theme="dark"] .process-card,
+html[data-theme="dark"] .checklist-card,
+html[data-theme="dark"] .compare-table-wrap,
+html[data-theme="dark"] .service-modal,
+html[data-theme="dark"] .faq-item {
+  background: linear-gradient(150deg, #0b233e 0%, #081a2e 100%);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .compare-table th {
+  background: #091e34;
+  color: #fff;
+}
+
+html[data-theme="dark"] .compare-table th.highlight-col {
+  background: #113459;
+  color: #7bbaff;
+}
+
+html[data-theme="dark"] .compare-table td.highlight-col {
+  background: rgba(7, 95, 215, 0.1);
+}
+
+html[data-theme="dark"] .tip-box {
+  background: #2b2308;
+  border-color: #5c470a;
+  color: #ffd875;
+}
+
+html[data-theme="dark"] .cost-card.featured {
+  background: linear-gradient(150deg, #113258 0%, #0b233e 100%);
+  border-color: var(--brand-2);
+}
+
+html[data-theme="dark"] .service-modal-visual {
+  background: rgba(5, 17, 31, 0.7);
+  border-color: rgba(30, 53, 80, 0.6);
+}
+
+html[data-theme="dark"] .service-modal-info-box {
+  background: #091e34;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .service-modal-price-bar {
+  background: #0f2d4e;
+  border-color: #1a426e;
+}
+
+
+html[data-theme="dark"] .service-visual {
+  background: rgba(5, 17, 31, 0.6);
+  border-color: rgba(30, 53, 80, 0.6);
+}
+
+html[data-theme="dark"] .choice-body {
+  background: #091e34;
+  border-color: var(--line);
+  color: #e6f0fa;
+}
+
+html[data-theme="dark"] .choice-card input:checked + .choice-body,
+html[data-theme="dark"] .extra-check:has(input:checked) {
+  background: #11365e;
+  border-color: var(--brand-2);
+  color: #7bbaff;
+}
+
+html[data-theme="dark"] .home-icon {
+  background: #102e50;
+  color: #72b6ff;
+}
+
+html[data-theme="dark"] .extra-check {
+  background: #091e34;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .price-hero {
+  background: linear-gradient(135deg, #0e2d4e 0%, #091e34 100%);
+  border-color: #1e456f;
+}
+
+html[data-theme="dark"] .route-line,
+html[data-theme="dark"] .transit-banner,
+html[data-theme="dark"] .city-help {
+  background: #0d2948;
+  border-color: #1c426b;
+}
+
+html[data-theme="dark"] .benefit-item {
+  background: #0a213a;
+}
+
+html[data-theme="dark"] .field input,
+html[data-theme="dark"] .field select,
+html[data-theme="dark"] .field textarea,
+html[data-theme="dark"] .city-search-wrap input {
+  color: var(--ink);
+  background: #07192c;
+  border-color: #1f3d5e;
+}
+
+html[data-theme="dark"] .field input:focus,
+html[data-theme="dark"] .field select:focus,
+html[data-theme="dark"] .field textarea:focus,
+html[data-theme="dark"] .city-search-wrap input:focus {
+  border-color: var(--brand-2);
+  box-shadow: 0 0 0 3.5px rgba(15, 120, 239, 0.22);
+}
+
+html[data-theme="dark"] .india-map path {
+  fill: #0c233c;
+  stroke: #1f4268;
+}
+
+html[data-theme="dark"] .map-badge {
+  background: #091e34;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .tab-btn {
+  color: #c2d1e4;
+}
+
+html[data-theme="dark"] .tab-btn:hover {
+  background: #113459;
+  color: #7bbaff;
+}
+
+html[data-theme="dark"] .tab-btn.active {
+  background: var(--brand);
+  color: #fff;
+}
+
+html[data-theme="dark"] .process-visual,
+html[data-theme="dark"] .ui-mini {
+  background: #081d33;
+  border-color: #1b3858;
+}
+
+html[data-theme="dark"] .ui-line {
+  background: #163250;
+}
+
+html[data-theme="dark"] .ui-line.blue {
+  background: #256bb8;
+}
+
+html[data-theme="dark"] .quote-modal {
+  background: #0a2038;
+}
+
+html[data-theme="dark"] .dashboard-body {
+  background: #051424;
+}
+
+html[data-theme="dark"] .dashboard-topbar,
+html[data-theme="dark"] .dashboard-sidebar {
+  background: #081c32;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .auth-panel {
+  background: #071a2e;
+}
+
+html[data-theme="dark"] .feature-icon {
+  border-color: #1b3d62;
+  background: linear-gradient(135deg, #0e2d4e 0%, #091e34 100%);
+  color: #72b6ff;
+}
+
+html[data-theme="dark"] .timeline-step.pending .timeline-dot {
+  background: #152d47;
+  color: #7a93b0;
+  box-shadow: 0 0 0 6px rgba(10, 31, 54, 0.7);
+}
+
+html[data-theme="dark"] .main-nav {
+  background: #091e34;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] #serviceAreaLiveMap {
+  background: #091e34;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .leaflet-tile {
+  filter: brightness(0.65) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+html[data-theme="dark"] .leaflet-popup-content-wrapper,
+html[data-theme="dark"] .leaflet-popup-tip {
+  background: #081d33;
+  color: #e5f0fc;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--line);
+}
+
+html[data-theme="dark"] .map-hub-popup h4 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .map-hub-popup .hub-stat {
+  color: #bcd5ec;
+}
+
+html[data-theme="dark"] .route-live-preview {
+  background: #092038;
+  border-color: #19406b;
+}
+
+html[data-theme="dark"] .route-preview-details h4 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .feature-quad {
+  background: rgba(10, 30, 52, 0.7);
+  border-color: rgba(30, 55, 84, 0.8);
+}
+
+html[data-theme="dark"] .feature-quad .feature-icon {
+  background: rgba(7, 95, 215, 0.2);
+  border-color: rgba(56, 189, 248, 0.3);
+  color: #38bdf8;
+}
+
+html[data-theme="dark"] .feature-quad strong {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .feature-quad small {
+  color: #a0bede;
+}
+
+html[data-theme="dark"] .contact-help-banner {
+  background: #092038;
+  border-color: #19406b;
+}
+
+html[data-theme="dark"] .estimate-bar {
+  background: rgba(10, 30, 52, 0.85);
+  border-color: rgba(30, 55, 84, 0.85);
+}
+
+html[data-theme="dark"] .estimate-bar .field label {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .estimate-bar .field label small {
+  color: #94a3b8;
+}
+
+html[data-theme="dark"] .estimate-bar .field input,
+html[data-theme="dark"] .estimate-bar .field select {
+  background: #061527;
+  border-color: #1e3a5f;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .estimate-bar .field input:focus,
+html[data-theme="dark"] .estimate-bar .field select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+html[data-theme="dark"] .booking-meta-grid {
+  background: #091e34;
+  border: 1px solid var(--line);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    color-scheme: dark;
+  }
+}

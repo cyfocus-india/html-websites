@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MoveMate Home 2 — Instant route cost calculator, transparent pricing tiers, and Pan-India home and office shifting services.">
+  <meta name="theme-color" content="#075fd7">
+  <title>Home 2 — MoveMate</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main-content">
+    
+    <!-- Hero 2 Section: Route Finder & Express Shifting -->
+    <section class="hero-home2 soft-blue" aria-label="MoveMate Express Relocation Finder">
+      <div class="container hero-home2-wrap">
+        <div class="trust-pill">
+          <span class="avatar-stack" aria-hidden="true">
+            <span>★</span><span>★</span><span>★</span>
+          </span>
+          <span>4.9 / 5.0 Rating from 10,000+ Shifting Customers</span>
+        </div>
+        <h1 style="font-size:clamp(2.4rem, 4.8vw, 4.5rem);max-width:860px">Smart Moving Network Across 1,000+ Indian Cities</h1>
+        <div class="hero-script">Transparent Pricing • Zero Transit Breakage • 24/7 Live Support</div>
+        <p class="hero-lead" style="max-width:680px">Calculate door-to-door shifting costs, choose your dedicated container, and book background-verified packing crews in under 60 seconds.</p>
+
+        <!-- Route & Quote Calculator Panel -->
+        <form class="route-form-panel validate-form" data-success="Great! Your route estimate has been computed. Our moving manager will confirm vehicle dispatch with you shortly." novalidate>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+            <span class="eyebrow" style="margin-bottom:0">Instant Route Finder</span>
+            <span class="paid-pill">✓ 100% Fixed Rates • GST Included</span>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="h2Pickup">Pickup City / Locality</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/></svg>
+                <input id="h2Pickup" name="pickup" list="moveMateCitySuggestions" placeholder="E.g. Indiranagar, BLR" autocomplete="off" required minlength="2">
+              </div>
+              <span class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="h2Delivery">Destination City / Locality</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/></svg>
+                <input id="h2Delivery" name="delivery" list="moveMateCitySuggestions" placeholder="E.g. Madhapur, HYD" autocomplete="off" required minlength="2">
+              </div>
+              <span class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="h2Size">Home / Office Size</label>
+              <select id="h2Size" name="size" required>
+                <option value="">Select Space Size</option>
+                <option value="1bhk">1 BHK / Studio Flat</option>
+                <option value="2bhk" selected>2 BHK Apartment</option>
+                <option value="3bhk">3 BHK Family Home</option>
+                <option value="4bhk">4+ BHK / Villa</option>
+                <option value="office">Office / Commercial Space</option>
+              </select>
+              <span class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="h2Date">Preferred Move Date</label>
+              <input id="h2Date" name="moveDate" type="date" required>
+              <span class="error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <!-- Dynamic Live Route Computation Preview -->
+          <div class="route-live-preview" id="h2RoutePreview" style="display:none">
+            <div class="route-preview-details">
+              <span class="eyebrow" id="h2PreviewType" style="margin-bottom:2px">Route Computed</span>
+              <h4 id="h2PreviewTitle">Indiranagar, Bengaluru → Madhapur, Hyderabad</h4>
+              <p style="margin:0;font-size:0.86rem;color:var(--text)" id="h2PreviewInfo">Distance: ~570 km • Dedicated Sealed Container • ETA: 24–36 Hours</p>
+            </div>
+            <div class="route-preview-price">
+              <small style="color:var(--muted)">Estimated Price</small><br>
+              <strong class="text-brand" style="font-size:1.35rem" id="h2PreviewPrice">₹14,500 – ₹18,000</strong>
+            </div>
+          </div>
+
+          <div class="route-form-footer">
+            <div class="route-form-badges">
+              <small>✓ Free Transit Insurance</small>
+              <small>✓ Dedicated Container</small>
+              <small>✓ No Advance Penalty</small>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">
+              <span>Get Guaranteed Quote</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Key MoveMate Differentiators -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why MoveMate Leads</span>
+          <h2>A Higher Standard of Relocation Care</h2>
+          <p>Traditional movers cut corners with shared vehicles and rough handling. MoveMate engineers every move with specialized equipment and trained personnel.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card reveal">
+            <div class="service-visual">
+              <picture>
+                <source srcset="assets/images/service-packing.webp" type="image/webp">
+                <img src="assets/images/service-packing.png" alt="5-ply cartons, bubble cushioning and edge guards" width="1254" height="1254" loading="lazy">
+              </picture>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-badge">Zero Damage</span>
+                <span class="service-price">5-Ply Quality</span>
+              </div>
+              <h3>Multi-Layer Packing</h3>
+              <p>Reinforced 5-ply cartons, bubble wrap, edge protectors, and waterproof stretch covers for fragile items.</p>
+              <ul class="check-list">
+                <li>Glassware &amp; chinaware padding</li>
+                <li>Heavy appliance foam wrap</li>
+                <li>Color-coded room cartons</li>
+              </ul>
+              <button class="btn btn-outline full explore-service-btn" data-explore-service="packing" type="button">
+                <span>Explore Packing</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-visual">
+              <picture>
+                <source srcset="assets/images/service-intercity.webp" type="image/webp">
+                <img src="assets/images/service-intercity.png" alt="Dedicated sealed container vehicle on highway" width="1254" height="1254" loading="lazy">
+              </picture>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-badge">Dedicated Fleet</span>
+                <span class="service-price">Sealed Truck</span>
+              </div>
+              <h3>Sealed Containers</h3>
+              <p>Your goods travel in a private, locked container. No co-loading, no transshipment, and no mix-ups.</p>
+              <ul class="check-list">
+                <li>Direct doorstep to doorstep</li>
+                <li>Tamper-proof seal verification</li>
+                <li>Weatherproof steel body</li>
+              </ul>
+              <button class="btn btn-outline full explore-service-btn" data-explore-service="intercity" type="button">
+                <span>Book Container</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-visual">
+              <picture>
+                <source srcset="assets/images/service-local.webp" type="image/webp">
+                <img src="assets/images/service-local.png" alt="GPS-tracked container moving vehicle with boxes" width="1254" height="1254" loading="lazy">
+              </picture>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-badge">Live GPS</span>
+                <span class="service-price">24/7 Updates</span>
+              </div>
+              <h3>Live Checkpoints</h3>
+              <p>Track your shipment from pickup to destination with automated SMS alerts, driver coordinates, and live ETA.</p>
+              <ul class="check-list">
+                <li>Direct driver contact details</li>
+                <li>Milestone checkpoint tracking</li>
+                <li>Accurate live delivery ETA</li>
+              </ul>
+              <a class="btn btn-outline full" href="pages/dashboard.html">
+                <span>View Dashboard</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-visual">
+              <picture>
+                <source srcset="assets/images/pricing-calculator.webp" type="image/webp">
+                <img src="assets/images/pricing-calculator.png" alt="Calculator showing 100% itemized transparent pricing" width="1254" height="1254" loading="lazy">
+              </picture>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-badge">No Surprises</span>
+                <span class="service-price">GST Included</span>
+              </div>
+              <h3>Fixed Itemized Rates</h3>
+              <p>What you are quoted is exactly what you pay. Transparent breakdown for packing, freight, and taxes.</p>
+              <ul class="check-list">
+                <li>Itemized tax invoice receipts</li>
+                <li>Zero hidden toll or labor fees</li>
+                <li>Free survey cancellation</li>
+              </ul>
+              <a class="btn btn-outline full" href="pages/pricing.html">
+                <span>Open Calculator</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent Shifting Pricing Tiers Comparison -->
+    <section class="section soft-blue">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Clear Shifting Estimates</span>
+          <h2>Transparent Rates by Home Size</h2>
+          <p>Choose your home size to see standard inclusions, crew allocation, and estimated pricing ranges.</p>
+        </div>
+
+        <div class="cost-grid reveal">
+          <article class="cost-card">
+            <span class="eyebrow" style="margin-bottom:4px">Compact Move</span>
+            <h3>1 BHK / Studio</h3>
+            <div class="cost-card-price">₹4,500 <small>– ₹7,500</small></div>
+            <p style="font-size:0.88rem;color:var(--text);margin-bottom:16px">Ideal for single professionals or small apartments with essential items.</p>
+            <ul class="check-list" style="font-size:0.86rem">
+              <li>2 Dedicated certified movers</li>
+              <li>Small covered moving vehicle</li>
+              <li>Complete 5-ply cartons &amp; tape</li>
+              <li>Basic furniture assembly</li>
+            </ul>
+            <button class="btn btn-outline full quote-open" data-service="local" data-home-size="1bhk" style="margin-top:auto" type="button">
+              <span>Book 1 BHK Move</span>
+            </button>
+          </article>
+
+          <article class="cost-card featured">
+            <span class="cost-card-badge">★ MOST POPULAR</span>
+            <span class="eyebrow" style="margin-bottom:4px">Family Apartment</span>
+            <h3>2 BHK Standard</h3>
+            <div class="cost-card-price">₹8,500 <small>– ₹13,500</small></div>
+            <p style="font-size:0.88rem;color:var(--text);margin-bottom:16px">Our most booked plan for complete 2 BHK household furniture and appliances.</p>
+            <ul class="check-list" style="font-size:0.86rem">
+              <li>3 Dedicated certified movers</li>
+              <li>14-17 Ft closed container truck</li>
+              <li>Specialized fridge &amp; TV cushions</li>
+              <li>Free ₹50,000 transit cover</li>
+            </ul>
+            <button class="btn btn-primary full quote-open" data-service="local" data-home-size="2bhk" style="margin-top:auto" type="button">
+              <span>Book 2 BHK Move</span>
+            </button>
+          </article>
+
+          <article class="cost-card">
+            <span class="eyebrow" style="margin-bottom:4px">Spacious Home</span>
+            <h3>3 BHK Large</h3>
+            <div class="cost-card-price">₹14,000 <small>– ₹22,000</small></div>
+            <p style="font-size:0.88rem;color:var(--text);margin-bottom:16px">Complete shifting for large families with delicate decor, dining and beds.</p>
+            <ul class="check-list" style="font-size:0.86rem">
+              <li>4-5 Dedicated movers + supervisor</li>
+              <li>19-22 Ft dedicated container</li>
+              <li>Full packing + unpack room setup</li>
+              <li>Full ₹1,00,000 transit cover</li>
+            </ul>
+            <button class="btn btn-outline full quote-open" data-service="local" data-home-size="3bhk" style="margin-top:auto" type="button">
+              <span>Book 3 BHK Move</span>
+            </button>
+          </article>
+
+          <article class="cost-card">
+            <span class="eyebrow" style="margin-bottom:4px">Premium Shifting</span>
+            <h3>4+ BHK / Villa</h3>
+            <div class="cost-card-price">Custom <small>Survey</small></div>
+            <p style="font-size:0.88rem;color:var(--text);margin-bottom:16px">Bespoke relocation for bungalows, multi-level villas and luxury estates.</p>
+            <ul class="check-list" style="font-size:0.86rem">
+              <li>Dedicated senior relocation manager</li>
+              <li>Heavy equipment &amp; piano rigging</li>
+              <li>White-glove fragile unpacking</li>
+              <li>Custom crate carpentry</li>
+            </ul>
+            <button class="btn btn-outline full quote-open" data-service="local" data-home-size="4bhk" data-custom-survey="true" style="margin-top:auto" type="button">
+              <span>Request Villa Survey</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Experience Stories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Real Experiences</span>
+          <h2>What Families Say About MoveMate</h2>
+          <p>Read authentic relocation stories from families and businesses who moved with us across India.</p>
+        </div>
+
+        <div class="story-grid reveal">
+          <article class="story-card">
+            <div class="story-stars">★★★★★</div>
+            <p style="font-size:0.95rem;line-height:1.6;font-style:italic">“Moved our entire 2 BHK household from Bengaluru to Hyderabad in under 24 hours. The crew arrived with high-grade 5-ply cartons and not a single glassware item was scratched.”</p>
+            <div class="story-author">
+              <div class="story-avatar">AD</div>
+              <div>
+                <strong>Ananya Deshmukh</strong><br>
+                <small>Bengaluru → Hyderabad • 2 BHK</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-stars">★★★★★</div>
+            <p style="font-size:0.95rem;line-height:1.6;font-style:italic">“What I loved most was the price transparency. The initial quote matched the final invoice to the exact rupee. Real-time driver updates kept my family relaxed throughout the transit.”</p>
+            <div class="story-author">
+              <div class="story-avatar">RM</div>
+              <div>
+                <strong>Rohit Malhotra</strong><br>
+                <small>Delhi NCR → Pune • 3 BHK</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-stars">★★★★★</div>
+            <p style="font-size:0.95rem;line-height:1.6;font-style:italic">“Relocated our 28-member tech workspace over the weekend with zero Monday downtime. Server racks and monitor setups were packed and assembled with surgical precision.”</p>
+            <div class="story-author">
+              <div class="story-avatar">SN</div>
+              <div>
+                <strong>Siddharth Nair</strong><br>
+                <small>Mumbai → Chennai • Commercial Move</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="section-tight" style="background:var(--navy);color:#fff">
+      <div class="container impact-stats" style="color:#fff">
+        <div class="impact-stat">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.6 2.8 8.1 7 10 4.2-1.9 7-5.4 7-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <strong data-count="10" data-suffix="+">10+</strong>
+          <span>Years of moving excellence</span>
+        </div>
+        <div class="impact-stat">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </span>
+          <strong data-count="5000" data-suffix="+">5,000+</strong>
+          <span>Verified safe household moves</span>
+        </div>
+        <div class="impact-stat">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          </span>
+          <strong data-count="1000" data-suffix="+">1,000+</strong>
+          <span>Pan-India city coverage</span>
+        </div>
+        <div class="impact-stat">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <strong data-count="99" data-suffix="%">99%</strong>
+          <span>Punctual arrival rate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="section">
+      <div class="container cta-panel reveal">
+        <div>
+          <span class="eyebrow">Shift With Total Peace of Mind</span>
+          <h2>Ready To Book Your Upcoming Move?</h2>
+          <p>Get an instant transparent estimate or speak with an expert relocation advisor.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-outline" href="pages/pricing.html">
+            <span>Try Price Calculator</span>
+          </a>
+          <button class="btn btn-primary quote-open" type="button">
+            <span>Get Free Quote</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
