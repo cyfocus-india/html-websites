@@ -1,0 +1,62 @@
+html[dir="rtl"] body { text-align: right; }
+html[dir="rtl"] .header-inner,
+html[dir="rtl"] .exam-card-top,
+html[dir="rtl"] .trust-item,
+html[dir="rtl"] .ribbon-item,
+html[dir="rtl"] .stat,
+html[dir="rtl"] .contact-detail,
+html[dir="rtl"] .material,
+html[dir="rtl"] .quick-action,
+html[dir="rtl"] .faculty-modal-head { flex-direction: row-reverse; }
+html[dir="rtl"] .search-box .icon { right: 12px; left: auto; }
+html[dir="rtl"] .search-box input { padding-right: 38px; padding-left: 12px; }
+html[dir="rtl"] .course-card-footer .btn { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .course-meta div + div { padding-right: 14px; padding-left: 0; border-right: 1px solid var(--line); border-left: 0; }
+html[dir="rtl"] .popular-label { right: auto; left: 18px; }
+html[dir="rtl"] .summary-card .summary-icon { right: auto; left: 16px; }
+html[dir="rtl"] .nav { inset: 0 auto 0 0; border-left: 0; border-right: 1px solid var(--line); transform: translateX(-100%); }
+html[dir="rtl"] .nav.open { transform: translateX(0); }
+html[dir="rtl"] .dashboard-sidebar { right: 0; left: auto; border-right: 0; border-left: 1px solid var(--line); transform: translateX(100%); }
+html[dir="rtl"] .dashboard-sidebar.open { transform: translateX(0); }
+html[dir="rtl"] .performance-table th,
+html[dir="rtl"] .performance-table td,
+html[dir="rtl"] .compare-table th,
+html[dir="rtl"] .compare-table td:first-child,
+html[dir="rtl"] .faq-question { text-align: right; }
+html[dir="rtl"] .progress span { transform-origin: right; }
+html[dir="rtl"] .password-wrap .field { padding-right: 13px; padding-left: 45px; }
+html[dir="rtl"] .password-toggle { right: auto; left: 3px; }
+html[dir="rtl"] .live-indicator { left: auto; right: 12px; }
+html[dir="rtl"] .live-viewers { right: auto; left: 12px; }
+html[dir="rtl"] .toast { right: auto; left: 18px; border-left: 0; border-right: 4px solid var(--blue-600); }
+html[dir="rtl"] .dropdown-caret { margin-left: 0; margin-right: 6px; }
+html[dir="rtl"] .dropdown-menu.dropdown-menu-end { right: auto; left: 0; }
+html[dir="rtl"] .dropdown-link:hover, html[dir="rtl"] .dropdown-link.active { transform: translateX(-3px); }
+html[dir="rtl"] .card-link .icon { transform: scaleX(-1); }
+html[dir="rtl"] .card-link:hover .icon { transform: scaleX(-1) translateX(4px); }
+html[dir="rtl"] .hero-float { right: auto; left: 5%; }
+@media (max-width: 759px) {
+  html[dir="rtl"] .hero-float { right: auto; left: 10px; }
+}
+html[dir="rtl"] .modal-head { flex-direction: row-reverse; }
+@media (min-width: 480px) {
+  html[dir="rtl"] .stat:nth-child(odd) { border-right: 0; border-left: 1px solid rgba(255,255,255,.2); }
+  html[dir="rtl"] .stat:last-child:nth-child(odd) { border-left: 0; }
+}
+@media (min-width: 1024px) {
+  html[dir="rtl"] .dashboard-sidebar { transform: none; }
+  html[dir="rtl"] .dashboard-main { margin-right: 250px; margin-left: 0; }
+  html[dir="rtl"].dashboard-body .site-footer { margin-right: 250px; margin-left: 0; }
+  html[dir="rtl"] .stat { border-right: 0 !important; border-left: 1px solid rgba(255,255,255,.2) !important; }
+  html[dir="rtl"] .stat:last-child { border-left: 0 !important; }
+}
+@media (max-width: 1119px) {
+  html[dir="rtl"] .nav:not(.open) { left: -380px; }
+}
+@media (max-width: 1023px) {
+  html[dir="rtl"] .dashboard-sidebar:not(.open) { right: -320px; }
+}
+@media (min-width: 1120px) {
+  html[dir="rtl"] .nav { inset: auto; border: 0; transform: none; }
+}
+

@@ -1,0 +1,202 @@
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f1f6ff;
+  --text: #dbe6f6;
+  --muted: #a5b9d8;
+  --surface: #09162d;
+  --surface-2: #0d1e3a;
+  --line: #1d3456;
+  --blue-50: #0e2448;
+  --blue-100: #143362;
+  --blue-200: #1d437d;
+  --blue-300: #2559a8;
+  --blue-400: #3b82f6;
+  --blue-500: #60a5fa;
+  --blue-600: #60a5fa;
+  --blue-700: #93c5fd;
+  --blue-800: #bfdbfe;
+  --blue-900: #dbeafe;
+  --blue-950: #071328;
+  --shadow-sm: 0 7px 24px rgba(0, 0, 0, .35);
+  --shadow-md: 0 18px 48px rgba(0, 0, 0, .5);
+}
+
+html[data-theme="dark"] body { background: var(--surface); color: var(--text); }
+html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] h3, html[data-theme="dark"] h4 { color: var(--ink); }
+html[data-theme="dark"] p, html[data-theme="dark"] .muted { color: var(--muted); }
+
+/* Heroes & Banners */
+html[data-theme="dark"] .home-hero,
+html[data-theme="dark"] .page-hero { background: linear-gradient(110deg, #071328, #0a2144 55%, #0b2d58); }
+html[data-theme="dark"] .home-hero::before { opacity: .25; }
+html[data-theme="dark"] .hero-copy > p { color: #c5d6ee; }
+html[data-theme="dark"] .hero-copy h1 { color: #f8faff; }
+html[data-theme="dark"] .hero-visual { border-radius: 0; overflow: visible; opacity: 1; }
+html[data-theme="dark"] .hero-pill { background: #0e2448; border-color: #2559a8; color: #93c5fd; }
+html[data-theme="dark"] .accent { color: #93c5fd; }
+html[data-theme="dark"] .eyebrow { color: #60a5fa; }
+
+/* Buttons & Links */
+html[data-theme="dark"] .btn-outline { color: #93c5fd; border-color: #3b82f6; background: rgba(59, 130, 246, .08); }
+html[data-theme="dark"] .btn-outline:hover { color: #fff; background: #2563eb; border-color: #2563eb; }
+html[data-theme="dark"] .btn-ghost { color: #93c5fd; background: #0e2448; }
+html[data-theme="dark"] .btn-ghost:hover { background: #143362; }
+html[data-theme="dark"] .card-link { color: #93c5fd; }
+html[data-theme="dark"] .card-link:hover { color: #bfdbfe; }
+
+/* Cards & Containers */
+html[data-theme="dark"] .card { background: #09162d; border-color: #1d3456; }
+html[data-theme="dark"] .card:hover { border-color: #2b5592; box-shadow: 0 16px 40px rgba(0, 0, 0, .45); }
+html[data-theme="dark"] .feature-ribbon { background: #1d3456; border-color: #1d3456; }
+html[data-theme="dark"] .ribbon-item { background: #09162d; }
+html[data-theme="dark"] .ribbon-item b { color: #f1f6ff; }
+html[data-theme="dark"] .ribbon-item span { color: #a5b9d8; }
+
+html[data-theme="dark"] .results-band,
+html[data-theme="dark"] .finder-banner,
+html[data-theme="dark"] .auth-page,
+html[data-theme="dark"] .error-page { background: linear-gradient(140deg, #09162d, #0d2243); }
+html[data-theme="dark"] .dashboard-body { background: #061024; }
+
+/* Forms & Inputs */
+html[data-theme="dark"] .field,
+html[data-theme="dark"] .sort-select { background: #0b1a33; border-color: #1d3456; color: #f1f6ff; }
+html[data-theme="dark"] .field::placeholder { color: #738ba9; }
+html[data-theme="dark"] .badge-low { background: #35171c; }
+html[data-theme="dark"] .form-status { background: #102d1b; }
+html[data-theme="dark"] .faculty-photo { background-color: #102748; }
+
+/* Header & Navigation */
+html[data-theme="dark"] .site-header { background: color-mix(in srgb, #09162d 94%, transparent); border-color: #1d3456; }
+html[data-theme="dark"] .brand-name { color: #f1f6ff; }
+html[data-theme="dark"] .brand-mark { color: #60a5fa; }
+html[data-theme="dark"] .brand-tag { color: #a5b9d8; }
+html[data-theme="dark"] .nav-link { color: #dbe6f6; }
+html[data-theme="dark"] .nav-link:hover, html[data-theme="dark"] .nav-link.active { color: #93c5fd; background: #0e2448; }
+html[data-theme="dark"] .dropdown-menu { background: #09162d; border-color: #1d3456; box-shadow: 0 16px 40px rgba(0, 0, 0, .55); }
+html[data-theme="dark"] .dropdown-link { color: #dbe6f6; }
+html[data-theme="dark"] .dropdown-link:hover, html[data-theme="dark"] .dropdown-link.active { background: #0e2448; color: #93c5fd; }
+html[data-theme="dark"] .dropdown-link .icon { color: #93c5fd; }
+
+/* Interactive Widgets & Modals */
+html[data-theme="dark"] .test-top-bar,
+html[data-theme="dark"] .faculty-stat-grid,
+html[data-theme="dark"] .live-chat-wrap,
+html[data-theme="dark"] .mobile-filter-bar,
+html[data-theme="dark"] .nav-drawer-toggles { background: #0c1b35; border-color: #1d3456; }
+html[data-theme="dark"] .test-opt-label { background: #0b1a33; border-color: #1d3456; }
+html[data-theme="dark"] .test-opt-label:hover { background: #12284d; }
+html[data-theme="dark"] .test-opt-label:has(input:checked) { background: #132e5b; border-color: #3b82f6; }
+html[data-theme="dark"] .test-timer { background: #3d141a; color: #fca5a5; }
+html[data-theme="dark"] .course-badge { background: #0c1b35; border-color: #1d3456; color: #dbe6f6; }
+html[data-theme="dark"] .course-badge.highlight { background: #142a4e; border-color: #2b5592; color: #93c5fd; }
+html[data-theme="dark"] .hero-float { border: 1px solid #1e3a6a; box-shadow: 0 16px 40px rgba(0, 0, 0, .6); }
+html[data-theme="dark"] .compare-table th { background: #0b1a33; border-color: #1d3456; color: #f1f6ff; }
+html[data-theme="dark"] .compare-table td { border-color: #1d3456; color: #dbe6f6; }
+html[data-theme="dark"] .coupon-box input { background: #0b1a33; }
+html[data-theme="dark"] .save-badge { background: #092e1e; border-color: #155e3c; color: #6ee7b7; }
+html[data-theme="dark"] .billing-toggle { background: #0b1a33; border-color: #1d3456; }
+html[data-theme="dark"] .billing-btn { color: #dbe6f6; }
+html[data-theme="dark"] .billing-btn:hover:not(.active) { color: #93c5fd; }
+html[data-theme="dark"] .billing-btn.active { background: #2563eb; color: #fff; }
+html[data-theme="dark"] .donut::after { background: var(--surface); color: var(--ink); }
+html[data-theme="dark"] .modal-panel { background: #0b1a33; border-color: #1d3456; color: #dbe6f6; }
+html[data-theme="dark"] .modal-head h2 { color: #f1f6ff; }
+html[data-theme="dark"] .modal-close-corner { background: #0c1b35; border-color: #1d3456; color: #94a3b8; }
+html[data-theme="dark"] .modal-close-corner:hover { background: #3d141a; border-color: #7f1d1d; color: #fca5a5; }
+html[data-theme="dark"] .icon-btn { background: #0c1b35; border-color: #1d3456; color: #e2edff; }
+html[data-theme="dark"] .icon-btn:hover { background: #12284d; border-color: #3b82f6; color: #93c5fd; }
+html[data-theme="dark"] .dir-indicator { color: #94a3b8; }
+html[data-theme="dark"] .trust-icon { background: #0d2246; border-color: #1e3a6a; color: #93c5fd; }
+html[data-theme="dark"] .trust-icon .icon { stroke: #93c5fd; color: #93c5fd; }
+html[data-theme="dark"] .trust-item strong { color: #f1f6ff; }
+html[data-theme="dark"] .trust-item small { color: #a5b9d8; }
+html[data-theme="dark"] .result-number,
+html[data-theme="dark"] .trophy-wrap { background: #09162d; border-color: #1d3456; }
+html[data-theme="dark"] .result-number strong { color: #93c5fd; }
+html[data-theme="dark"] .result-number span { color: #a5b9d8; }
+html[data-theme="dark"] .trophy-wrap small { color: #f0f6ff; }
+html[data-theme="dark"] .modal-stat-box,
+html[data-theme="dark"] .bookmark-card { background: #0b1a33; border-color: #1d3456; }
+html[data-theme="dark"] .modal-stat-box strong { color: #93c5fd; }
+html[data-theme="dark"] .bookmark-card b { color: #f0f6ff; }
+html[data-theme="dark"] .logout-btn:hover { color: #f87171 !important; border-color: #7f1d1d !important; background: #2a1215 !important; }
+
+/* Inner Page Specific Highlights */
+html[data-theme="dark"] .faculty-name { color: #f1f6ff; }
+html[data-theme="dark"] .faculty-subject { color: #93c5fd; }
+html[data-theme="dark"] .faculty-exp { color: #a5b9d8; }
+html[data-theme="dark"] .course-card h3 { color: #f1f6ff; }
+html[data-theme="dark"] .course-meta { color: #a5b9d8; }
+html[data-theme="dark"] .course-price strong { color: #f1f6ff; }
+html[data-theme="dark"] .course-price del { color: #738ba9; }
+html[data-theme="dark"] .faq-question { color: #f1f6ff; }
+html[data-theme="dark"] .faq-answer { color: #a5b9d8; }
+html[data-theme="dark"] .faq-icon { color: #93c5fd; }
+html[data-theme="dark"] .story-score { color: #93c5fd; }
+html[data-theme="dark"] .class-time { color: #93c5fd; }
+html[data-theme="dark"] .chat-msg b { color: #93c5fd; }
+html[data-theme="dark"] .material-info strong { color: #f1f6ff; }
+html[data-theme="dark"] .material-info span { color: #a5b9d8; }
+html[data-theme="dark"] .content-article section { border-color: #1d3456; }
+html[data-theme="dark"] .content-article h2 { color: #f1f6ff; }
+html[data-theme="dark"] .content-article p, html[data-theme="dark"] .content-article li { color: #dbe6f6; }
+html[data-theme="dark"] .content-nav a { color: #a5b9d8; }
+html[data-theme="dark"] .content-nav a:hover { color: #93c5fd; background: #0e2448; }
+html[data-theme="dark"] .filter-panel { background: #09162d; border-color: #1d3456; }
+html[data-theme="dark"] .filter-chip { background: #0c1c36; color: #a5b9d8; border-color: #1d3456; }
+html[data-theme="dark"] .filter-chip.active, html[data-theme="dark"] .filter-chip:hover { color: #93c5fd; background: #0e2448; border-color: #2559a8; }
+html[data-theme="dark"] .testimonial-quote { color: #dbe6f6; }
+html[data-theme="dark"] .testimonial-info strong { color: #f1f6ff; }
+html[data-theme="dark"] .testimonial-info small { color: #a5b9d8; }
+html[data-theme="dark"] .testimonial-author { border-color: #1d3456; }
+html[data-theme="dark"] .card-link, html[data-theme="dark"] a.card-link { color: #93c5fd !important; }
+html[data-theme="dark"] .card-link:hover, html[data-theme="dark"] a.card-link:hover { color: #bfdbfe !important; }
+html[data-theme="dark"] .course-detail-card .exam-icon { background: color-mix(in srgb, var(--tone, var(--blue-400)) 22%, #09162d); border-color: color-mix(in srgb, var(--tone, var(--blue-400)) 45%, transparent); }
+html[data-theme="dark"] .course-detail-card .exam-icon .icon { stroke: color-mix(in srgb, var(--tone, #93c5fd) 75%, #fff) !important; color: color-mix(in srgb, var(--tone, #93c5fd) 75%, #fff) !important; }
+html[data-theme="dark"] .syllabus-card { background: #0c1c36; border-color: #1d3456; }
+html[data-theme="dark"] .syllabus-toggle { background: #0e2448; color: #f1f6ff; }
+html[data-theme="dark"] .syllabus-toggle:hover { background: #13315c; }
+html[data-theme="dark"] .syllabus-content { border-top-color: #1d3456; }
+html[data-theme="dark"] .syllabus-content ul { color: #dbe6f6; }
+html[data-theme="dark"] .syllabus-count-pill { background: #13315c; color: #93c5fd; }
+html[data-theme="dark"] .coupon-box { background: #0c1c36; border-color: #1d3456; }
+html[data-theme="dark"] .coupon-input-wrap input { background: #081426; border-color: #3b82f6; color: #f1f6ff; }
+html[data-theme="dark"] .page-hero .btn-outline { background: #0c1c36; border-color: #3b82f6; color: #93c5fd; }
+html[data-theme="dark"] .page-hero .btn-outline:hover { background: #2563eb; color: #fff; }
+html[data-theme="dark"] .resource-card .btn { background: #0c1c36; border-color: #2559a8; color: #93c5fd; }
+html[data-theme="dark"] .resource-card .btn:hover { background: #2563eb; color: #fff; }
+html[data-theme="dark"] .score-kpi { background: #081426; border-color: #1d3456; }
+html[data-theme="dark"] .score-kpi strong { color: #f1f6ff; }
+html[data-theme="dark"] .review-test-btn { background: #0c1c36; border-color: #1d3456; color: #93c5fd; }
+html[data-theme="dark"] .review-test-btn:hover { background: #2563eb; border-color: #2563eb; color: #fff; }
+html[data-theme="dark"] .dash-sidebar-header { border-bottom-color: #1d3456; }
+html[data-theme="dark"] .sidebar-toggle-btn { color: #cbd5e1; }
+html[data-theme="dark"] .sidebar-toggle-btn:hover { background: #0c1c36; color: #93c5fd; }
+html[data-theme="dark"] .dash-sidebar-title { color: #f1f6ff; }
+html[data-theme="dark"] .dash-link { color: #cbd5e1; }
+html[data-theme="dark"] .dash-link:hover { background: #0c1c36; color: #93c5fd; }
+html[data-theme="dark"] .dash-link.active { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
+html[data-theme="dark"] .dash-sidebar-footer { border-top-color: #1d3456; }
+html[data-theme="dark"] .dash-user-meta strong { color: #f1f6ff; }
+html[data-theme="dark"] .dash-logout-btn { background: #0c1c36; border-color: #1d3456; color: #94a3b8; }
+html[data-theme="dark"] .dash-logout-btn:hover { background: #450a0a; border-color: #7f1d1d; color: #fca5a5; }
+html[data-theme="dark"] .dash-view-header { border-bottom-color: #1d3456; }
+html[data-theme="dark"] .test-catalog-card { background: #0c1c36; border-color: #1d3456; }
+html[data-theme="dark"] .test-catalog-card:hover { border-color: #3b82f6; }
+html[data-theme="dark"] .material { background: #0c1c36; border-color: #1d3456; }
+html[data-theme="dark"] .material:hover { background: #13274c; border-color: #3b82f6; }
+html[data-theme="dark"] .material .material-download-btn { background: #13274c; border-color: #2563eb; color: #93c5fd; }
+html[data-theme="dark"] .material:hover .material-download-btn { background: #2563eb; color: #fff; }
+html[data-theme="dark"] .summary-card { background: #0c1c36; border-color: #1d3456; }
+html[data-theme="dark"] .summary-card .summary-icon { background: color-mix(in srgb, var(--tone, #3b82f6) 22%, #0c1c36); }
+html[data-theme="dark"] .summary-foot { border-top-color: #1d3456; }
+html[data-theme="dark"] .summary-foot b { color: #f1f6ff; }
+html[data-theme="dark"] .schedule-row { border-bottom-color: #1d3456; }
+html[data-theme="dark"] .course-card-footer .btn-outline { background: #0c1c36; color: #93c5fd !important; border-color: #3b82f6; }
+html[data-theme="dark"] .course-card-footer .btn-outline:hover { background: #2563eb; color: #fff !important; border-color: #2563eb; }
+html[data-theme="dark"] .course-card-footer .btn-primary { color: #fff !important; }
+html[data-theme="dark"] .dashboard-footer { border-top-color: #1d3456; color: #64748b; }
+html[data-theme="dark"] .dash-footer-links a { color: #64748b; }
+html[data-theme="dark"] .dash-footer-links a:hover { color: #93c5fd; }
+
