@@ -1,0 +1,281 @@
+/*
+  Pawfolk — Dark Mode Stylesheet
+  High contrast, deep slate tones, and vibrant playful accents.
+*/
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --dark: #0f1713;
+  --ink: #fff7e8;
+  --ink-soft: color-mix(in srgb, #fff7e8 72%, #0f1713);
+  --paper: #16201b;
+  --paper-2: #1e2c25;
+  --paper-warm: #26382f;
+  --white: #19251f;
+  --mustard: #2a88d8;
+  --mustard-soft: #1d3648;
+  --blue: #3a96e4;
+  --blue-dark: #6eb7f7;
+  --blue-soft: #1d3344;
+  --coral: #3a96e4;
+  --mint: #1e2c25;
+  --slate: #0f1713;
+  --on-blue: #fff7e8;
+  --line: 2px solid #fff7e8;
+  --line-thick: 3px solid #fff7e8;
+  --line-soft: 1.5px solid color-mix(in srgb, #fff7e8 25%, transparent);
+  --shadow: 5px 6px 0 #fff7e8;
+  --shadow-hover: 7px 8px 0 #fff7e8;
+  --shadow-small: 3px 3px 0 #fff7e8;
+}
+
+html[data-theme="dark"] body::before {
+  opacity: .07;
+  mix-blend-mode: screen;
+}
+
+html[data-theme="dark"] .site-header {
+  background: color-mix(in srgb, #16201b 92%, transparent);
+}
+
+html[data-theme="dark"] .hero,
+html[data-theme="dark"] .newsletter,
+html[data-theme="dark"] .page-hero:not(.page-hero--blue):not(.page-hero--slate) {
+  color: var(--cream);
+  background: var(--blue-dark);
+}
+
+html[data-theme="dark"] .hero .btn,
+html[data-theme="dark"] .newsletter .btn,
+html[data-theme="dark"] .page-hero .btn {
+  border-color: var(--dark);
+  box-shadow: 3px 3px 0 var(--dark);
+}
+
+html[data-theme="dark"] .btn--paper {
+  background: #fff7e8;
+  color: #121a15;
+}
+
+html[data-theme="dark"] .btn--ink {
+  background: #fff7e8;
+  color: #121a15;
+  border-color: #fff7e8;
+}
+
+html[data-theme="dark"] .hero__image-wrap,
+html[data-theme="dark"] .story-visual img,
+html[data-theme="dark"] .page-hero__mascot,
+html[data-theme="dark"] .auth-mascot {
+  border-color: var(--dark);
+  box-shadow: 7px 8px 0 var(--dark);
+}
+
+html[data-theme="dark"] .product-card__visual,
+html[data-theme="dark"] .pet-card,
+html[data-theme="dark"] .brand-card,
+html[data-theme="dark"] .map-card,
+html[data-theme="dark"] .modal__dialog,
+html[data-theme="dark"] .cart-drawer {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .product-card {
+  background: var(--white);
+}
+
+html[data-theme="dark"] .pet-card:hover,
+html[data-theme="dark"] .product-card:hover,
+html[data-theme="dark"] .brand-card:hover,
+html[data-theme="dark"] .service-card:hover,
+html[data-theme="dark"] .info-card:hover {
+  box-shadow: 5px 6px 0 var(--ink);
+}
+
+html[data-theme="dark"] .service-band {
+  background: #193852;
+  color: var(--cream);
+}
+
+html[data-theme="dark"] .site-footer {
+  background: #0d1410;
+}
+
+html[data-theme="dark"] .field,
+html[data-theme="dark"] .select,
+html[data-theme="dark"] .shop-search-input {
+  background: #111a15;
+  color: #fff7e8;
+  border-color: var(--ink);
+}
+
+html[data-theme="dark"] .cart-qty-ctrls {
+  background: #111a15;
+  border-color: var(--ink);
+}
+
+html[data-theme="dark"] .cart-qty-btn {
+  color: #fff7e8;
+}
+
+html[data-theme="dark"] .wishlist-btn {
+  background: #16201b;
+  color: #fff7e8;
+  border-color: #fff7e8;
+}
+
+html[data-theme="dark"] .quick-view-btn {
+  background: #fff7e8;
+  color: #121a15;
+  border-color: #fff7e8;
+}
+
+html[data-theme="dark"] .brand-word::after {
+  background: var(--blue);
+}
+
+html[data-theme="dark"] .filter-bar {
+  background: var(--white);
+  border-color: var(--ink);
+}
+
+html[data-theme="dark"] .filter-btn {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .filter-btn.is-active {
+  background: var(--ink);
+  color: var(--dark);
+}
+
+html[data-theme="dark"] .nav-dropdown {
+  background: var(--paper);
+  border-color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+html[data-theme="dark"] .nav-dropdown-link {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .nav-dropdown-link:hover,
+html[data-theme="dark"] .nav-dropdown-link[aria-current="page"] {
+  background: var(--blue);
+  color: var(--cream);
+}
+
+html[data-theme="dark"] .nav-signin-btn {
+  background: var(--blue);
+  color: var(--cream);
+  border-color: var(--cream);
+  box-shadow: 3px 3px 0 var(--cream);
+}
+
+html[data-theme="dark"] .nav-signin-btn:hover {
+  background: var(--cream);
+  color: var(--dark);
+}
+
+@media (max-width: 1100px) {
+  html[data-theme="dark"] .nav-list {
+    background: var(--paper);
+    border-color: var(--ink);
+  }
+
+  html[data-theme="dark"] .nav-link {
+    color: var(--ink);
+    border-color: var(--line-soft);
+  }
+
+  html[data-theme="dark"] .nav-link:hover,
+  html[data-theme="dark"] .nav-link[aria-current="page"] {
+    background: var(--paper-2);
+    color: var(--blue-dark);
+  }
+
+  html[data-theme="dark"] .nav-dropdown {
+    border-inline-start-color: var(--blue);
+  }
+
+  html[data-theme="dark"] .nav-dropdown-link {
+    background: var(--paper-2);
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+
+  html[data-theme="dark"] .nav-dropdown-link:hover,
+  html[data-theme="dark"] .nav-dropdown-link[aria-current="page"] {
+    background: var(--blue);
+    color: var(--cream);
+  }
+}
+
+html[data-theme="dark"] .article-modal__header {
+  background: var(--paper-2);
+}
+
+html[data-theme="dark"] .article-modal__media {
+  background: var(--paper-2);
+  border-color: var(--ink);
+}
+
+html[data-theme="dark"] .article-modal__callout {
+  background: var(--paper-2);
+  border-color: var(--ink);
+  border-inline-start-color: var(--blue);
+}
+
+html[data-theme="dark"] .map-floating-badge,
+html[data-theme="dark"] .map-footer-bar {
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .map-control-btn {
+  background: var(--paper);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .map-control-btn:hover {
+  background: var(--blue);
+  color: var(--cream);
+}
+
+html[data-theme="dark"] .transit-tag {
+  background: var(--paper-2);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+/* --- Missing dark-mode overrides --- */
+[data-theme="dark"] .pill {
+  background: color-mix(in srgb, var(--blue) 22%, var(--paper));
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+[data-theme="dark"] .coming-soon-page,
+[data-theme="dark"] .coming-soon-hero {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+[data-theme="dark"] select {
+  background: var(--paper-2);
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+[data-theme="dark"] .auth-card input,
+[data-theme="dark"] .auth-card select,
+[data-theme="dark"] .auth-card textarea {
+  color: var(--ink);
+  background: var(--paper-2);
+}
+
+[data-theme="dark"] .cart-drawer__empty {
+  color: var(--ink-soft);
+}
