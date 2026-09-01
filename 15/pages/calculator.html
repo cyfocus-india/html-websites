@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Estimate monthly and annual rooftop solar savings with the interactive SolarNest calculator."><title>Solar Savings Calculator — SolarNest</title>
+  <link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="../assets/css/dark-mode.css"><link rel="stylesheet" href="../assets/css/rtl.css"><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script><script src="../assets/js/main.js" defer></script>
+</head><body data-page="calculator"><div id="site-header"></div><main id="main-content">
+  <section class="hero page-hero"><img class="hero-art" src="../assets/images/hero-calculator.png" alt="Solar home with a green calculator and coin stacks"><div class="hero-gradient"></div><div class="container"><div class="hero-copy"><span class="eyebrow">Know before you invest</span><h1>Solar Savings<br><span class="accent">Calculator.</span> <i data-lucide="calculator"></i></h1><p>Enter a few details to estimate monthly bill reduction, annual savings and likely payback.</p><div class="hero-metrics"><div class="hero-metric"><strong>Up to 80%</strong><span>potential bill reduction</span></div><div class="hero-metric"><strong>Clean</strong><span>renewable energy</span></div><div class="hero-metric"><strong>Guided</strong><span>subsidy support</span></div></div></div></div></section>
+  <section class="section" aria-labelledby="calculator-title"><div class="container">
+    <div class="section-heading reveal"><span class="eyebrow">Your estimate</span><h2 id="calculator-title">Turn Your Bill Into a Solar Plan</h2><p>Adjust the inputs and the estimate updates instantly.</p></div>
+    <div class="calculator-shell reveal">
+      <form class="calc-form" id="savings-calculator" novalidate>
+        <h3 class="step-title"><span class="step-number">1</span>Enter Your Details</h3>
+        <div class="field"><label for="monthlyBill">Monthly electricity bill (₹)</label><input id="monthlyBill" name="monthlyBill" type="number" min="500" max="500000" value="5000" required><div class="field-error"></div></div>
+        <div class="field"><label for="usage">Average daily usage (units)</label><input id="usage" name="usage" type="number" min="1" max="2500" value="21" required><div class="field-error"></div></div>
+        <div class="field"><label for="tariff">Electricity tariff (₹ per unit)</label><input id="tariff" name="tariff" type="number" min="3" max="20" step=".5" value="8" required><div class="field-error"></div></div>
+        <div class="field"><label for="systemSize">System size (kW) <span>1–20 kW</span></label><div class="range-wrap"><button type="button" data-size-minus aria-label="Decrease system size">−</button><output data-size-output for="systemSize">3</output><button type="button" data-size-plus aria-label="Increase system size">+</button></div><input id="systemSize" name="systemSize" type="hidden" value="3"></div>
+        <div class="field"><label for="roofType">Roof type</label><select id="roofType" name="roofType"><option>RCC flat roof</option><option>Tiled roof</option><option>Metal sheet roof</option></select></div>
+        <div class="field"><label for="location">Location</label><select id="location" name="location"><option>Bengaluru, Karnataka</option><option>Pune, Maharashtra</option><option>Hyderabad, Telangana</option><option>Chennai, Tamil Nadu</option><option>Ahmedabad, Gujarat</option><option>Other Indian City</option></select></div>
+        <button class="btn" type="submit" style="width:100%">Calculate Savings <i data-lucide="calculator"></i></button>
+        <p class="muted" style="font-size:.69rem"><i data-lucide="lightbulb"></i> Not sure about your exact details? <a class="kicker" href="contact.html#booking">Book a free site assessment</a>.</p>
+      </form>
+      <div class="calc-results" data-results tabindex="-1" aria-live="polite">
+        <h3 class="step-title"><span class="step-number">2</span>Your Savings Estimate</h3>
+        <div class="result-hero"><span class="result-label">Estimated monthly savings</span><strong class="result-value" data-monthly-saving>₹3,024</strong><span class="muted">Real Indian Solar benchmark</span><span class="result-coin"></span></div>
+        <div class="results-grid"><div class="result-tile"><span>Estimated annual savings</span><strong data-annual-saving>₹36,288</strong></div><div class="result-tile"><span>Payback period</span><strong data-payback>2.8 Years</strong></div><div class="result-tile"><span>System size</span><strong data-system-output>3 kW</strong></div><div class="result-tile"><span>CO₂ reduction</span><strong data-carbon>3.8 Tons/Year</strong></div></div>
+        <div class="savings-note"><span class="icon-orb"><i data-lucide="zap"></i></span><span>You can eliminate up to <strong>95% of grid charges</strong> with net metering.</span></div>
+
+        <!-- Indian Solar Norms & Calculation Assumptions Note Box -->
+        <div class="calc-assumptions-box">
+          <h4><i data-lucide="info"></i> Indian Solar Standards &amp; Calculation Assumptions</h4>
+          <div class="calc-assumptions-grid">
+            <div class="assumption-item"><strong>Daily Solar Generation:</strong> Sized at ~4.2 kWh/day per kWp (approx. 126 units/kW/month in Indian sunlight conditions).</div>
+            <div class="assumption-item"><strong>Net Metering Offset:</strong> Offsets up to 95% of energy charges. Remaining ~5% accounts for DISCOM fixed meter load tariffs.</div>
+            <div class="assumption-item"><strong>Surplus Grid Export:</strong> Excess generation fed back into grid is credited at state DISCOM solar rate (~₹3.50/unit APPC).</div>
+            <div class="assumption-item"><strong>PM Surya Ghar Subsidy:</strong> Central subsidy of ₹30,000 (1 kW), ₹60,000 (2 kW), and ₹78,000 (3–10 kW) is factored into net payback.</div>
+          </div>
+          <div class="subsidy-badge-pill"><i data-lucide="check-circle-2"></i> PM Surya Ghar: Muft Bijli Yojana Central Subsidy Verified</div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+  <section class="section surface" aria-labelledby="chart-title"><div class="container"><div class="card chart-card reveal"><div class="grid-2"><div><span class="eyebrow">Long-term value</span><h2 id="chart-title" style="margin:0">Your Savings Over 25 Years</h2><p class="muted">Grey shows an illustrative rising grid bill; green shows your lower net cost after solar generation.</p></div><div class="results-grid"><div class="result-tile"><span>Illustrative lifetime savings</span><strong data-lifetime>₹8,61,840</strong></div><div class="result-tile"><span>Electricity units generated</span><strong data-units>1,04,328 Units</strong></div></div></div><div class="chart-wrap" data-savings-chart role="img" aria-label="Twenty-five-year illustrative bill comparison chart"></div><div style="display:flex;gap:20px;justify-content:center;margin-top:14px;font-size:.69rem"><span><i style="display:inline-block;width:11px;height:11px;background:#bdc5ce;border-radius:3px"></i> Bill without solar</span><span><i style="display:inline-block;width:11px;height:11px;background:#2f9631;border-radius:3px"></i> Net bill with solar</span></div></div></div></section>
+  <section class="section-sm"><div class="container"><div class="soft-band reveal"><div class="soft-band-inner"><div><h2>Get an Accurate Savings Plan for Your Home</h2><p>A SolarNest engineer can analyse your roof, bill history and local conditions.</p></div><a class="btn" href="contact.html#booking"><i data-lucide="calendar-check"></i> Book Free Site Assessment</a></div></div><p class="muted" style="font-size:.68rem">* All results are broad estimates, not guarantees. Actual savings depend on usage, tariff, shading, installation quality, system performance and applicable policy.</p></div></section>
+</main><div id="site-footer"></div></body></html>
