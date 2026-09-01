@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop thoughtful food, toys, walking gear, beds, and habitat essentials for dogs, cats, birds, fish, and small animals.">
+  <title>Pawfolk | Shop</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script>try{const t=localStorage.getItem('pawfolk-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dir=localStorage.getItem('pawfolk-direction')||'ltr'}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="announcement" aria-label="Store updates">
+    <div class="announcement__track">
+      <span class="announcement__item">Free local delivery over $45</span>
+      <span class="announcement__item">Food, fun, and fewer mysteries</span>
+      <span class="announcement__item">Special orders welcome</span>
+      <span class="announcement__item" aria-hidden="true">Free local delivery over $45</span>
+      <span class="announcement__item" aria-hidden="true">Food, fun, and fewer mysteries</span>
+      <span class="announcement__item" aria-hidden="true">Special orders welcome</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-shell container" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="Pawfolk home">
+        <span class="brand__mark" aria-hidden="true"><span class="brand__eyes"></span></span>
+        <span class="brand__name">Pawfolk</span>
+      </a>
+            <ul class="nav-list" data-nav-list>
+        <li class="mobile-drawer-auth">
+          <a class="btn btn--blue btn--full" href="signin.html"><i class="fa-solid fa-user" aria-hidden="true"></i> Sign In to Pawfolk</a>
+        </li>
+        <li class="nav-item nav-item--dropdown">
+          <button class="nav-link nav-link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Home <i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-dropdown" aria-label="Home variations">
+            <li><a class="nav-dropdown-link" href="../index.html"><span>Home 1</span></a></li>
+            <li><a class="nav-dropdown-link" href="../index1.html"><span>Home 2</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" aria-current="page" href="shop.html">Shop</a></li>
+        <li><a class="nav-link" href="brands.html">Brands</a></li>
+        <li><a class="nav-link" href="grooming.html">Grooming</a></li>
+        <li><a class="nav-link" href="blog.html">Blog</a></li>
+        <li><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item nav-item--dropdown">
+          <button class="nav-link nav-link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Pages <i class="fa-solid fa-chevron-down nav-dropdown-icon" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-dropdown" aria-label="Other pages">
+            <li><a class="nav-dropdown-link" href="services.html"><span>Services</span></a></li>
+            <li><a class="nav-dropdown-link" href="coming-soon.html"><span>Coming Soon</span></a></li>
+            <li><a class="nav-dropdown-link" href="404.html"><span>404</span></a></li>
+            <li><a class="nav-dropdown-link" href="privacy.html"><span>Privacy Policy</span></a></li>
+            <li><a class="nav-dropdown-link" href="terms.html"><span>Terms of Service</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn--sm btn--blue nav-signin-btn" href="signin.html">Sign In</a>
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme"></button>
+        <button class="icon-btn" type="button" data-dir-toggle aria-label="Switch text direction">RTL</button>
+        <button class="icon-btn" type="button" data-cart-toggle aria-label="Open shopping bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="icon-btn__count" data-cart-count hidden>0</span></button>
+        <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--coral">
+      <div class="container page-hero__grid">
+        <div data-reveal="left">
+          <p class="eyebrow">Catalog</p>
+          <h1>Shop</h1>
+          <p class="lead">Browse practical favorites and unexpectedly delightful things, organized by the creature who matters.</p>
+        </div>
+        <div class="page-hero__mascot" data-reveal="right" aria-hidden="true">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" data-reveal>
+          <div class="filter-pills" aria-label="Filter products by pet category">
+            <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All pals</button>
+            <button class="filter-btn" type="button" data-filter="dogs" aria-pressed="false">Dogs</button>
+            <button class="filter-btn" type="button" data-filter="cats" aria-pressed="false">Cats</button>
+            <button class="filter-btn" type="button" data-filter="birds" aria-pressed="false">Birds</button>
+            <button class="filter-btn" type="button" data-filter="fish" aria-pressed="false">Fish</button>
+            <button class="filter-btn" type="button" data-filter="small" aria-pressed="false">Small animals</button>
+          </div>
+
+          <div class="shop-controls-right">
+            <div class="shop-search-wrap">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input class="shop-search-input" type="search" placeholder="Search toys, food, beds..." aria-label="Search products">
+            </div>
+
+            <div>
+              <label class="sr-only" for="sort-products">Sort products</label>
+              <select class="select" id="sort-products" data-sort style="min-height:42px;padding:8px 14px;border-radius:999px;font-size:.86rem;font-weight:700">
+                <option value="featured">Featured picks</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-grid" data-filter-grid>
+          <!-- Product 1 -->
+          <article class="product-card" data-category="dogs" data-price="18" data-order="1" data-reveal>
+            <div class="product-card__visual">
+              <span class="product-card__badge">New</span>
+              <picture>
+                <source srcset="../assets/images/product-bone.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-bone.png" width="1000" height="1000" loading="lazy" alt="Bounce-Back Bone illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Dogs · Play</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Bounce-Back Bone</h3>
+              <p class="muted">Bouncy natural rubber for determined chompers.</p>
+              <div class="product-card__bottom">
+                <span class="price">$18.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Bounce-Back Bone" data-price="18" data-icon="bone" aria-label="Add Bounce-Back Bone to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" data-category="cats" data-price="22" data-order="2" data-reveal data-reveal-delay="1">
+            <div class="product-card__visual">
+              <span class="product-card__badge">Bestseller</span>
+              <picture>
+                <source srcset="../assets/images/product-wand.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-wand.png" width="1000" height="1000" loading="lazy" alt="Sky Dancer Wand illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Cats · Play</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Sky Dancer Wand</h3>
+              <p class="muted">Recycled felt feathers on a flexible beech wand.</p>
+              <div class="product-card__bottom">
+                <span class="price">$22.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Sky Dancer Wand" data-price="22" data-icon="feather" aria-label="Add Sky Dancer Wand to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" data-category="birds" data-price="14" data-order="3" data-reveal data-reveal-delay="2">
+            <div class="product-card__visual">
+              <span class="product-card__badge">Natural</span>
+              <picture>
+                <source srcset="../assets/images/product-forage.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-forage.png" width="1000" height="1000" loading="lazy" alt="Garden Forage Mix illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Birds · Forage</span><span class="product-card__rating">★★★★☆</span></div>
+              <h3>Garden Forage Mix</h3>
+              <p class="muted">Flowers, herbs, and seeds for curious beaks.</p>
+              <div class="product-card__bottom">
+                <span class="price">$14.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Garden Forage Mix" data-price="14" data-icon="seedling" aria-label="Add Garden Forage Mix to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" data-category="fish" data-price="28" data-order="4" data-reveal data-reveal-delay="3">
+            <div class="product-card__visual">
+              <span class="product-card__badge">Calm water</span>
+              <picture>
+                <source srcset="../assets/images/product-fern.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-fern.png" width="1000" height="1000" loading="lazy" alt="Soft Current Fern illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Fish · Habitat</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Soft Current Fern</h3>
+              <p class="muted">Silk aquarium greenery with smooth, safe edges.</p>
+              <div class="product-card__bottom">
+                <span class="price">$28.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Soft Current Fern" data-price="28" data-icon="leaf" aria-label="Add Soft Current Fern to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card" data-category="small" data-price="36" data-order="5" data-reveal>
+            <div class="product-card__visual">
+              <span class="product-card__badge">Cozy</span>
+              <picture>
+                <source srcset="../assets/images/product-house.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-house.png" width="1000" height="1000" loading="lazy" alt="Hide & Seek House illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Small pals · Home</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Hide & Seek House</h3>
+              <p class="muted">A chew-safe woven grass hideaway for bunnies & pigs.</p>
+              <div class="product-card__bottom">
+                <span class="price">$36.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Hide & Seek House" data-price="36" data-icon="house" aria-label="Add Hide & Seek House to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card" data-category="dogs" data-price="24" data-order="6" data-reveal data-reveal-delay="1">
+            <div class="product-card__visual">
+              <span class="product-card__badge">Earth-kind</span>
+              <picture>
+                <source srcset="../assets/images/product-collar.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-collar.png" width="1000" height="1000" loading="lazy" alt="Everyday Collar illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Dogs · Walk</span><span class="product-card__rating">★★★★☆</span></div>
+              <h3>Everyday Collar</h3>
+              <p class="muted">Soft organic hemp webbing with sturdy brass hardware.</p>
+              <div class="product-card__bottom">
+                <span class="price">$24.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Everyday Collar" data-price="24" data-icon="ring" aria-label="Add Everyday Collar to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card" data-category="cats dogs" data-price="64" data-order="7" data-reveal data-reveal-delay="2">
+            <div class="product-card__visual">
+              <span class="product-card__badge">Cozy</span>
+              <picture>
+                <source srcset="../assets/images/product-bed.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-bed.png" width="1000" height="1000" loading="lazy" alt="Doughnut Daybed illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Cats & Dogs · Sleep</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Doughnut Daybed</h3>
+              <p class="muted">A washable cloud for world-class orthopedic napping.</p>
+              <div class="product-card__bottom">
+                <span class="price">$64.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Doughnut Daybed" data-price="64" data-icon="cloud" aria-label="Add Doughnut Daybed to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card" data-category="small" data-price="11" data-order="8" data-reveal data-reveal-delay="3">
+            <div class="product-card__visual">
+              <span class="product-card__badge">Snack</span>
+              <picture>
+                <source srcset="../assets/images/product-bites.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-bites.png" width="1000" height="1000" loading="lazy" alt="Crunchy Garden Bites illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>Small pals · Treat</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Crunchy Garden Bites</h3>
+              <p class="muted">Tiny baked treats with fresh carrot and parsley.</p>
+              <div class="product-card__bottom">
+                <span class="price">$11.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Crunchy Garden Bites" data-price="11" data-icon="carrot" aria-label="Add Crunchy Garden Bites to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 9 -->
+          <article class="product-card" data-category="dogs cats" data-price="12" data-order="9" data-reveal>
+            <div class="product-card__visual">
+              <span class="product-card__badge">Bestseller</span>
+              <picture>
+                <source srcset="../assets/images/product-munchies.webp" type="image/webp">
+                <img class="product-card__img" src="../assets/images/product-munchies.png" width="1000" height="1000" loading="lazy" alt="Moon Munchies illustration">
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta"><span>All Pets · Treats</span><span class="product-card__rating">★★★★★</span></div>
+              <h3>Moon Munchies</h3>
+              <p class="muted">Pure freeze-dried wild salmon rewards with zero additives.</p>
+              <div class="product-card__bottom">
+                <span class="price">$12.00</span>
+                <button class="add-btn" type="button" data-add-cart data-name="Moon Munchies" data-price="12" data-icon="cookie-bite" aria-label="Add Moon Munchies to bag"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special order banner -->
+    <section class="section section--blue">
+      <div class="container split-story">
+        <div data-reveal="left">
+          <p class="eyebrow">Can’t spot what you need?</p>
+          <h2>We’re excellent finders.</h2>
+          <p class="lead">Tell us the brand, size, flavor, or wonderfully specific specialty item you're hunting for. We’ll coordinate with our makers and get back to you within two business days.</p>
+          <a class="btn btn--paper" href="contact.html#special-order">Request a special order</a>
+        </div>
+        <div class="page-hero__mascot" data-reveal="right" aria-hidden="true">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-about">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark" aria-hidden="true"><span class="brand__eyes"></span></span>
+          <span>Pawfolk</span>
+        </a>
+        <p>Good things and gentle care for every kind of companion.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home 1</a></li>
+          <li><a href="../index1.html">Home 2</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Company & Info</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Account & Utility</p>
+        <ul class="footer-links">
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="coming-soon.html">Coming Soon</a></li>
+          <li><a href="404.html">404</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Legal & Policy</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Pawfolk Pet Supply Co.</span>
+      <span>Made with care for creatures great & small.</span>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
