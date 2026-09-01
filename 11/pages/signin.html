@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your Stillwater Aquatics keeper account.">
+  <meta name="theme-color" content="#183d34">
+  <title>Sign In — Stillwater Aquatics</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script>try{const t=localStorage.getItem('stillwater-theme');if(t)document.documentElement.dataset.theme=t;document.documentElement.dir=localStorage.getItem('stillwater-direction')||'ltr'}catch(e){}</script>
+  <script src="../assets/js/lucide.min.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body data-root=".." data-page="signin">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="auth-shell" id="main-content">
+    <section class="auth-card reveal">
+      <div class="auth-top-bar">
+        <a class="brand" href="../index.html">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 33c9-15 26-18 38-5l10-8v26l-10-8C34 51 17 48 8 33Z" fill="currentColor" opacity=".16"></path>
+            <path d="M10 33c9-12 23-14 34-4l8-6v20l-8-6c-11 10-25 8-34-4Z" fill="none" stroke="currentColor" stroke-width="3"></path>
+            <circle cx="38" cy="30" r="2.5" fill="currentColor"></circle>
+          </svg>
+          <span>Stillwater<span>.</span></span>
+        </a>
+        <div style="display:flex;gap:0.45rem;align-items:center">
+          <button class="dir-button" type="button" data-direction-toggle aria-label="Switch text direction" title="Switch text direction">
+            <i data-lucide="arrow-left-right"></i>
+            <span data-direction-label>RTL</span>
+          </button>
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch light / dark theme">
+            <i data-lucide="moon"></i>
+          </button>
+        </div>
+      </div>
+
+      <p class="eyebrow">Keeper account</p>
+      <h1>Welcome back.</h1>
+      <p class="muted">Sign in to review saved tank specs, equipment lists, and special order requests.</p>
+
+      <form data-validate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="signin-email">Email address</label>
+            <input id="signin-email" type="email" name="email" autocomplete="email" required placeholder="name@example.com" aria-describedby="signin-email-error">
+            <span class="field-error" id="signin-email-error" data-error-for="signin-email"></span>
+          </div>
+
+          <div class="field">
+            <div class="field-label-row">
+              <label for="signin-password">Password</label>
+              <button class="field-link" type="button" data-forgot-trigger id="forgot-password-trigger">Forgot password?</button>
+            </div>
+            <div class="password-wrap">
+              <input id="signin-password" type="password" name="password" autocomplete="current-password" minlength="8" required placeholder="••••••••" aria-describedby="signin-password-error">
+              <button class="password-toggle" type="button" data-password-toggle aria-label="Show password"><i data-lucide="eye"></i></button>
+            </div>
+            <span class="field-error" id="signin-password-error" data-error-for="signin-password"></span>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem">
+          <button class="button coral" type="submit" style="width:100%">Sign in <i data-lucide="log-in"></i></button>
+        </div>
+        <div class="form-success" data-form-success role="status">
+          <i data-lucide="check-circle-2"></i>
+          <span>Sign in credentials verified in demo mode.</span>
+        </div>
+      </form>
+
+      <p class="auth-switch">New to Stillwater? <a href="signup.html">Create an account</a></p>
+      <div style="text-align:center;margin-top:1rem">
+        <a href="../index.html" style="font-size:0.82rem;color:var(--ink-soft);display:inline-flex;align-items:center;gap:0.35rem">
+          <i data-lucide="arrow-left" style="width:0.9rem;height:0.9rem"></i> Return to storefront
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Forgot Password Modal -->
+  <div class="modal-backdrop" id="forgot-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="forgot-modal-title">
+    <div class="modal-card auth-modal-card" role="document">
+      <button class="modal-close-btn" type="button" aria-label="Close password recovery popup" data-modal-close>
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body">
+        <div class="auth-modal-header">
+          <div class="auth-modal-icon">
+            <i data-lucide="key-round"></i>
+          </div>
+          <p class="eyebrow" style="margin-bottom:0.25rem">Account recovery</p>
+          <h2 id="forgot-modal-title" style="margin:0 0 0.4rem;font-family:var(--font-display);font-size:1.85rem;font-weight:400">Reset your password</h2>
+          <p class="muted" style="font-size:0.9rem;margin:0 0 1.25rem">Enter your registered email address and we will send you a password reset link to regain access to your keeper account.</p>
+        </div>
+
+        <form data-validate id="forgot-password-form">
+          <div class="field">
+            <label for="forgot-email">Email address</label>
+            <input id="forgot-email" type="email" name="email" autocomplete="email" required placeholder="name@example.com" aria-describedby="forgot-email-error">
+            <span class="field-error" id="forgot-email-error" data-error-for="forgot-email"></span>
+          </div>
+
+          <div style="margin-top:1.25rem;display:flex;flex-direction:column;gap:0.75rem">
+            <button class="button coral" type="submit" style="width:100%;justify-content:center">
+              Send reset link <i data-lucide="send"></i>
+            </button>
+            <button class="button secondary sm" type="button" data-modal-close style="width:100%;justify-content:center">
+              Back to sign in
+            </button>
+          </div>
+
+          <div class="form-success" data-form-success role="status">
+            <i data-lucide="check-circle-2"></i>
+            <span>Password reset link sent! Check your inbox for reset instructions.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

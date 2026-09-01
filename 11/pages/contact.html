@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visit Stillwater Aquatics or send a special order enquiry for fish, aquatic plants, and equipment.">
+  <meta name="theme-color" content="#183d34">
+  <title>Contact — Stillwater Aquatics</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script>try{const t=localStorage.getItem('stillwater-theme');if(t)document.documentElement.dataset.theme=t;document.documentElement.dir=localStorage.getItem('stillwater-direction')||'ltr'}catch(e){}</script>
+  <script src="../assets/js/lucide.min.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body data-root=".." data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div class="reveal">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <span>Contact</span>
+          </div>
+          <p class="eyebrow">See the fish, test the water</p>
+          <h1 class="page-title">Come by the fish room.</h1>
+        </div>
+        <p class="lede reveal">Bring a water sample, tank dimensions, or a photo of your layout. We’ll make more useful recommendations in person.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-aside reveal">
+          <p class="eyebrow">Store details</p>
+          <h2>Stillwater Aquatics</h2>
+          <ul class="contact-list">
+            <li>
+              <i data-lucide="map-pin"></i>
+              <div>
+                <strong>Address</strong>
+                <span>42 Lakeview Lane, Indiranagar, Bengaluru 560038</span>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="clock-3"></i>
+              <div>
+                <strong>Opening hours</strong>
+                <span>Tue–Sat · 10:30–19:00<br>Sun · 11:00–17:00<br>Monday · Closed for tank maintenance</span>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <div>
+                <strong>Direct phone</strong>
+                <a href="tel:+918055501642">+91 80 5550 1642</a>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="mail"></i>
+              <div>
+                <strong>Email desk</strong>
+                <a href="mailto:hello@stillwater.example">hello@stillwater.example</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="map-card" aria-label="Interactive map preview showing store location">
+            <iframe
+              title="Mini Map Preview"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=77.6360%2C12.9680%2C77.6460%2C12.9750&amp;layer=mapnik&amp;marker=12.9716%2C77.6412"
+              loading="lazy"
+              tabindex="-1"
+              style="width:100%;height:100%;border:0;position:absolute;inset:0;opacity:0.92">
+            </iframe>
+            <a href="#live-map" class="map-overlay-badge" aria-label="Jump to interactive map">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>Open live map <i data-lucide="arrow-down"></i></span>
+            </a>
+          </div>
+        </aside>
+
+        <section class="form-card reveal" id="special-order">
+          <p class="eyebrow">Special order enquiry</p>
+          <h2>Tell us what you’re building.</h2>
+          <p class="muted">This demo validates your request locally in the browser; it does not transmit private data over the network.</p>
+
+          <form data-validate>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="name" autocomplete="name" minlength="2" required placeholder="e.g. Maya Chen" aria-describedby="contact-name-error">
+                <span class="field-error" id="contact-name-error" data-error-for="contact-name"></span>
+              </div>
+
+              <div class="field">
+                <label for="contact-email">Email address</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="maya@example.com" aria-describedby="contact-email-error">
+                <span class="field-error" id="contact-email-error" data-error-for="contact-email"></span>
+              </div>
+
+              <div class="field">
+                <label for="contact-phone">Phone number</label>
+                <input id="contact-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+ ()-]{8,}" data-pattern-message="Use at least 8 digits and standard phone symbols." placeholder="+91 98765 43210" aria-describedby="contact-phone-error">
+                <span class="field-error" id="contact-phone-error" data-error-for="contact-phone"></span>
+              </div>
+
+              <div class="field">
+                <label for="contact-type">I’m looking for</label>
+                <select id="contact-type" name="type" required aria-describedby="contact-type-error">
+                  <option value="">Choose one</option>
+                  <option>Freshwater fish</option>
+                  <option>Marine fish &amp; corals</option>
+                  <option>Aquatic plants &amp; mosses</option>
+                  <option>Equipment or replacement parts</option>
+                  <option>Custom stocking plan</option>
+                </select>
+                <span class="field-error" id="contact-type-error" data-error-for="contact-type"></span>
+              </div>
+
+              <div class="field">
+                <label for="contact-volume">Tank volume (litres)</label>
+                <input id="contact-volume" name="volume" type="number" min="10" max="5000" placeholder="e.g. 120" aria-describedby="contact-volume-error">
+                <span class="field-error" id="contact-volume-error" data-error-for="contact-volume"></span>
+              </div>
+
+              <div class="field">
+                <label for="contact-date">Preferred date</label>
+                <input id="contact-date" name="date" type="date" aria-describedby="contact-date-error">
+                <span class="field-error" id="contact-date-error" data-error-for="contact-date"></span>
+              </div>
+
+              <div class="field full">
+                <label for="contact-message">Species, setup, or part details</label>
+                <textarea id="contact-message" name="message" minlength="20" required placeholder="Include current livestock, water parameters (pH, TDS, temp), filter model, or the exact species you wish to reserve." aria-describedby="contact-message-error"></textarea>
+                <span class="field-error" id="contact-message-error" data-error-for="contact-message"></span>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem">
+              <button class="button coral" type="submit">Send enquiry <i data-lucide="send"></i></button>
+            </div>
+            <div class="form-success" data-form-success role="status">
+              <i data-lucide="check-circle-2"></i>
+              <span>Thanks—your enquiry passed validation and is ready to send.</span>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="section surface-section" id="live-map">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Interactive Location Map</p>
+            <h2 class="section-title">Find our fish room.</h2>
+          </div>
+          <p class="lede">Located on Lakeview Lane in Indiranagar, Bengaluru. Free customer parking on premises and 5 minutes from Indiranagar Metro Station.</p>
+        </div>
+
+        <div class="interactive-map-card reveal">
+          <div class="map-header-bar">
+            <div class="map-store-info">
+              <span class="live-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Stillwater Aquatics Flagship Store &amp; Gallery</strong>
+                <span class="muted">42 Lakeview Lane, Indiranagar, Bengaluru 560038 · Open Tue–Sun</span>
+              </div>
+            </div>
+            <div class="map-controls">
+              <button class="map-btn" type="button" id="btn-zoom-in" aria-label="Zoom in on map" title="Zoom in">
+                <i data-lucide="plus"></i>
+              </button>
+              <button class="map-btn" type="button" id="btn-zoom-out" aria-label="Zoom out on map" title="Zoom out">
+                <i data-lucide="minus"></i>
+              </button>
+              <button class="map-btn" type="button" id="btn-recenter" aria-label="Recenter map on store" title="Recenter on store">
+                <i data-lucide="crosshair"></i>
+              </button>
+              <a class="button sm coral" href="https://maps.google.com/?q=12.9716,77.6412" target="_blank" rel="noopener noreferrer">
+                Get directions <i data-lucide="navigation"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-embed-container">
+            <iframe
+              id="interactive-map-iframe"
+              title="Stillwater Aquatics Live Location Map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=77.6320%2C12.9640%2C77.6510%2C12.9790&amp;layer=mapnik&amp;marker=12.9716%2C77.6412"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="map-feature-grid">
+            <div class="map-feature-item">
+              <div class="feature-icon"><i data-lucide="train"></i></div>
+              <div>
+                <strong>Metro Transit</strong>
+                <p>Indiranagar Metro Station (Purple Line) is a 450m (5-minute) shaded walk.</p>
+              </div>
+            </div>
+            <div class="map-feature-item">
+              <div class="feature-icon"><i data-lucide="car"></i></div>
+              <div>
+                <strong>Customer Parking</strong>
+                <p>Dedicated free parking and drive-up loading zone for rimless aquariums and hardscape.</p>
+              </div>
+            </div>
+            <div class="map-feature-item">
+              <div class="feature-icon"><i data-lucide="package-check"></i></div>
+              <div>
+                <strong>Oxygen Bagging</strong>
+                <p>All livestock is double-bagged with pure medical oxygen in insulated containers for safe transit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

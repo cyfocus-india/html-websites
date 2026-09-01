@@ -1,0 +1,320 @@
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #0b1c18;
+  --paper-2: #122b25;
+  --ink: #f1f0e8;
+  --ink-soft: #9fb2ab;
+  --surface-ink: #061411;
+  --kelp: #d5eca3;
+  --kelp-2: #b8d56a;
+  --oxygen: #b8d56a;
+  --oxygen-soft: rgba(184, 213, 106, 0.18);
+  --coral: #ff8d70;
+  --coral-soft: rgba(255, 141, 112, 0.16);
+  --line: rgba(232, 242, 236, 0.12);
+  --line-strong: rgba(232, 242, 236, 0.24);
+  --surface: rgba(18, 43, 37, 0.52);
+  --surface-card: rgba(16, 38, 33, 0.78);
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 28px 75px rgba(0, 0, 0, 0.58);
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(91, 130, 99, 0.2), transparent 32rem),
+    radial-gradient(circle at 88% 92%, rgba(255, 141, 112, 0.08), transparent 34rem),
+    var(--paper);
+}
+
+html[data-theme="dark"] .site-header {
+  background: rgba(11, 28, 24, 0.88);
+}
+html[data-theme="dark"] .site-header.is-scrolled {
+  background: rgba(11, 28, 24, 0.96);
+  border-bottom-color: var(--line);
+}
+
+html[data-theme="dark"] .dropdown-menu {
+  background: rgba(14, 34, 29, 0.96);
+  border-color: var(--line-strong);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .dropdown-item:hover,
+html[data-theme="dark"] .dropdown-item[aria-current="page"] {
+  background: rgba(184, 213, 106, 0.16);
+  color: var(--oxygen);
+}
+
+html[data-theme="dark"] .dir-button {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .dir-button:hover {
+  background: var(--oxygen);
+  color: #0b1c18;
+  border-color: var(--oxygen);
+}
+
+html[data-theme="dark"] .modal-backdrop,
+html[data-theme="dark"] .specimen-modal-backdrop {
+  background: rgba(3, 10, 8, 0.85);
+}
+
+html[data-theme="dark"] .modal-card,
+html[data-theme="dark"] .specimen-modal-card {
+  background: #0c201b;
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .auth-modal-icon {
+  background: rgba(255, 141, 112, 0.18);
+  border-color: rgba(255, 141, 112, 0.35);
+  color: var(--coral);
+}
+
+html[data-theme="dark"] .modal-close-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+html[data-theme="dark"] .modal-close-btn:hover {
+  background: var(--coral);
+  color: white;
+  border-color: var(--coral);
+}
+
+html[data-theme="dark"] .spec-box {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .modal-tip-box {
+  background: rgba(184, 213, 106, 0.12);
+  border-color: rgba(184, 213, 106, 0.25);
+  color: #f1f0e8;
+}
+
+html[data-theme="dark"] .card-arrow {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--line);
+  color: #d2ddd8;
+}
+
+html[data-theme="dark"] .product-card .specimen-icon {
+  background: rgba(184, 213, 106, 0.14);
+  border-color: rgba(184, 213, 106, 0.35);
+  color: var(--oxygen);
+}
+html[data-theme="dark"] .product-card:hover .specimen-icon {
+  background: var(--oxygen);
+  color: #0b1c18;
+  border-color: var(--oxygen);
+}
+
+html[data-theme="dark"] .product-card:hover .card-arrow,
+html[data-theme="dark"] .plant-card:hover .card-arrow,
+html[data-theme="dark"] .equipment-card:hover .card-arrow,
+html[data-theme="dark"] .arrival-card:hover .card-arrow {
+  background: var(--oxygen);
+  color: #0b1c18;
+  border-color: var(--oxygen);
+}
+
+html[data-theme="dark"] .surface-section {
+  background: rgba(14, 34, 29, 0.4);
+}
+
+html[data-theme="dark"] .ink-section {
+  background: var(--surface-ink);
+  color: #f1f0e8;
+  border-block-color: var(--line);
+}
+
+html[data-theme="dark"] .contact-aside {
+  background: var(--surface-ink);
+  color: #f1f0e8;
+  border: 1px solid var(--line);
+}
+
+html[data-theme="dark"] .specimen-tag {
+  background: rgba(11, 28, 24, 0.92);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .hero-fishes-img {
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.5));
+}
+html[data-theme="dark"] .hero-fishes-img:hover {
+  filter: drop-shadow(0 26px 54px rgba(0, 0, 0, 0.7));
+}
+
+html[data-theme="dark"] .button {
+  border-color: var(--oxygen);
+  background: var(--oxygen);
+  color: #0b1c18;
+}
+html[data-theme="dark"] .button:hover {
+  background: #c9e47f;
+  border-color: #c9e47f;
+  box-shadow: 0 10px 24px rgba(184, 213, 106, 0.22);
+}
+
+html[data-theme="dark"] .button.secondary {
+  border-color: var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+}
+html[data-theme="dark"] .button.secondary:hover {
+  background: var(--surface-card);
+  color: var(--oxygen);
+  border-color: var(--oxygen);
+}
+
+html[data-theme="dark"] .button.coral {
+  border-color: var(--coral);
+  background: var(--coral);
+  color: #0b1c18;
+}
+html[data-theme="dark"] .button.coral:hover {
+  background: #ff9e85;
+  border-color: #ff9e85;
+}
+
+html[data-theme="dark"] .filter-button[aria-pressed="true"] {
+  background: var(--oxygen);
+  color: #0b1c18;
+  border-color: var(--oxygen);
+}
+
+html[data-theme="dark"] .field input,
+html[data-theme="dark"] .field select,
+html[data-theme="dark"] .field textarea,
+html[data-theme="dark"] .search-box input {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .field input:focus,
+html[data-theme="dark"] .field select:focus,
+html[data-theme="dark"] .field textarea:focus,
+html[data-theme="dark"] .search-box input:focus {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: var(--oxygen);
+  box-shadow: 0 0 0 3px rgba(184, 213, 106, 0.18);
+}
+
+html[data-theme="dark"] .field select option {
+  background: #122b25;
+  color: #f1f0e8;
+}
+
+html[data-theme="dark"] .field-error {
+  color: #ff7e67;
+}
+
+html[data-theme="dark"] .form-success {
+  background: rgba(184, 213, 106, 0.16);
+  border-color: rgba(184, 213, 106, 0.35);
+  color: #d5eca3;
+}
+
+html[data-theme="dark"] .empty-state {
+  background: var(--surface);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .trust-strip {
+  background: rgba(11, 28, 24, 0.35);
+}
+
+html[data-theme="dark"] .map-header-bar,
+html[data-theme="dark"] .map-feature-grid {
+  background: #0f2520;
+}
+html[data-theme="dark"] .map-embed-container iframe {
+  filter: brightness(0.88) contrast(1.1) saturate(0.9);
+}
+html[data-theme="dark"] .map-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+html[data-theme="dark"] .map-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--oxygen);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #0b1c18;
+    --paper-2: #122b25;
+    --ink: #f1f0e8;
+    --ink-soft: #9fb2ab;
+    --surface-ink: #061411;
+    --kelp: #d5eca3;
+    --kelp-2: #b8d56a;
+    --oxygen: #b8d56a;
+    --oxygen-soft: rgba(184, 213, 106, 0.18);
+    --coral: #ff8d70;
+    --coral-soft: rgba(255, 141, 112, 0.16);
+    --line: rgba(232, 242, 236, 0.12);
+    --line-strong: rgba(232, 242, 236, 0.24);
+    --surface: rgba(18, 43, 37, 0.52);
+    --surface-card: rgba(16, 38, 33, 0.78);
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+    --shadow-lg: 0 28px 75px rgba(0, 0, 0, 0.58);
+  }
+  html:not([data-theme="light"]) body {
+    background:
+      radial-gradient(circle at 12% 8%, rgba(91, 130, 99, 0.2), transparent 32rem),
+      radial-gradient(circle at 88% 92%, rgba(255, 141, 112, 0.08), transparent 34rem),
+      var(--paper);
+  }
+  html:not([data-theme="light"]) .site-header {
+    background: rgba(11, 28, 24, 0.88);
+  }
+  html:not([data-theme="light"]) .surface-section {
+    background: rgba(14, 34, 29, 0.4);
+  }
+  html:not([data-theme="light"]) .ink-section,
+  html:not([data-theme="light"]) .contact-aside {
+    background: var(--surface-ink);
+    color: #f1f0e8;
+    border-color: var(--line);
+  }
+  html:not([data-theme="light"]) .button {
+    border-color: var(--oxygen);
+    background: var(--oxygen);
+    color: #0b1c18;
+  }
+  html:not([data-theme="light"]) .button.secondary {
+    border-color: var(--line-strong);
+    background: transparent;
+    color: var(--ink);
+  }
+  html:not([data-theme="light"]) .filter-button[aria-pressed="true"] {
+    background: var(--oxygen);
+    color: #0b1c18;
+    border-color: var(--oxygen);
+  }
+  html:not([data-theme="light"]) .field input,
+  html:not([data-theme="light"]) .field select,
+  html:not([data-theme="light"]) .field textarea,
+  html:not([data-theme="light"]) .search-box input {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+  html:not([data-theme="light"]) .field select option {
+    background: #122b25;
+    color: #f1f0e8;
+  }
+  html:not([data-theme="light"]) .field-error {
+    color: #ff7e67;
+  }
+}

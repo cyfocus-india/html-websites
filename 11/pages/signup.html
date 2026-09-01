@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a Stillwater Aquatics keeper account.">
+  <meta name="theme-color" content="#183d34">
+  <title>Sign Up — Stillwater Aquatics</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script>try{const t=localStorage.getItem('stillwater-theme');if(t)document.documentElement.dataset.theme=t;document.documentElement.dir=localStorage.getItem('stillwater-direction')||'ltr'}catch(e){}</script>
+  <script src="../assets/js/lucide.min.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body data-root=".." data-page="signup">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="auth-shell" id="main-content">
+    <section class="auth-card reveal">
+      <div class="auth-top-bar">
+        <a class="brand" href="../index.html">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 33c9-15 26-18 38-5l10-8v26l-10-8C34 51 17 48 8 33Z" fill="currentColor" opacity=".16"></path>
+            <path d="M10 33c9-12 23-14 34-4l8-6v20l-8-6c-11 10-25 8-34-4Z" fill="none" stroke="currentColor" stroke-width="3"></path>
+            <circle cx="38" cy="30" r="2.5" fill="currentColor"></circle>
+          </svg>
+          <span>Stillwater<span>.</span></span>
+        </a>
+        <div style="display:flex;gap:0.45rem;align-items:center">
+          <button class="dir-button" type="button" data-direction-toggle aria-label="Switch text direction" title="Switch text direction">
+            <i data-lucide="arrow-left-right"></i>
+            <span data-direction-label>RTL</span>
+          </button>
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch light / dark theme">
+            <i data-lucide="moon"></i>
+          </button>
+        </div>
+      </div>
+
+      <p class="eyebrow">Keeper account</p>
+      <h1>Create your log.</h1>
+      <p class="muted">Save equipment records, water parameters, care notes, and special order requests.</p>
+
+      <form data-validate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="signup-name">Full name</label>
+            <input id="signup-name" name="name" autocomplete="name" minlength="2" required placeholder="e.g. David Ross" aria-describedby="signup-name-error">
+            <span class="field-error" id="signup-name-error" data-error-for="signup-name"></span>
+          </div>
+
+          <div class="field">
+            <label for="signup-email">Email address</label>
+            <input id="signup-email" type="email" name="email" autocomplete="email" required placeholder="name@example.com" aria-describedby="signup-email-error">
+            <span class="field-error" id="signup-email-error" data-error-for="signup-email"></span>
+          </div>
+
+          <div class="field">
+            <label for="signup-password">Password</label>
+            <div class="password-wrap">
+              <input id="signup-password" type="password" name="password" autocomplete="new-password" minlength="8" required placeholder="At least 8 characters" aria-describedby="signup-password-error">
+              <button class="password-toggle" type="button" data-password-toggle aria-label="Show password"><i data-lucide="eye"></i></button>
+            </div>
+            <span class="field-error" id="signup-password-error" data-error-for="signup-password"></span>
+          </div>
+
+          <div class="field">
+            <label for="signup-confirm">Confirm password</label>
+            <div class="password-wrap">
+              <input id="signup-confirm" type="password" name="confirm" autocomplete="new-password" minlength="8" data-matches="#signup-password" required placeholder="Re-type your password" aria-describedby="signup-confirm-error">
+              <button class="password-toggle" type="button" data-password-toggle aria-label="Show password"><i data-lucide="eye"></i></button>
+            </div>
+            <span class="field-error" id="signup-confirm-error" data-error-for="signup-confirm"></span>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem">
+          <button class="button coral" type="submit" style="width:100%">Create account <i data-lucide="user-plus"></i></button>
+        </div>
+        <div class="form-success" data-form-success role="status">
+          <i data-lucide="check-circle-2"></i>
+          <span>Account created successfully in demo mode.</span>
+        </div>
+      </form>
+
+      <p class="auth-switch">Already registered? <a href="signin.html">Sign in</a></p>
+      <div style="text-align:center;margin-top:1rem">
+        <a href="../index.html" style="font-size:0.82rem;color:var(--ink-soft);display:inline-flex;align-items:center;gap:0.35rem">
+          <i data-lucide="arrow-left" style="width:0.9rem;height:0.9rem"></i> Return to storefront
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

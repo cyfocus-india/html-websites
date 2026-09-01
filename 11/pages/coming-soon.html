@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Coming Soon — Stillwater Aquatics</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script>try{const t=localStorage.getItem('stillwater-theme');if(t)document.documentElement.dataset.theme=t;document.documentElement.dir=localStorage.getItem('stillwater-direction')||'ltr'}catch(e){}</script>
+  <script src="../assets/js/lucide.min.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body data-root=".." data-page="coming-soon">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main class="error-page container" id="main-content">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center">Acclimating now</p>
+      <h1 class="page-title" style="margin-inline:auto;max-width:14ch">The aquarium journal is almost ready.</h1>
+      <p class="lede" style="margin-inline:auto">Longer field notes, printable water checklists, and rare species profiles are resting before release.</p>
+      <form class="inline-form" data-validate style="max-width:34rem;margin:2rem auto 0" aria-label="Notification signup">
+        <div class="field" style="flex:1">
+          <label class="visually-hidden" for="soon-email">Email address</label>
+          <input id="soon-email" type="email" required placeholder="Enter your email" aria-describedby="soon-error">
+          <span class="field-error" id="soon-error" data-error-for="soon-email"></span>
+        </div>
+        <button class="button coral" type="submit">Notify me</button>
+        <div class="form-success" data-form-success role="status">
+          <i data-lucide="check-circle-2"></i>
+          <span>You’re on the journal early notice list.</span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

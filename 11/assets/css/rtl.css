@@ -1,0 +1,71 @@
+html[dir="rtl"] .eyebrow::before {
+  order: 2;
+}
+
+html[dir="rtl"] .nav-links a::after {
+  transform-origin: right;
+}
+
+html[dir="rtl"] [data-lucide="chevron-right"] {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .button [data-lucide="arrow-right"],
+html[dir="rtl"] .button [data-lucide="arrow-up-right"],
+html[dir="rtl"] .guide-card a.guide-link [data-lucide="arrow-right"] {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .button:hover [data-lucide="arrow-right"] {
+  transform: scaleX(-1) translateX(0.2rem);
+}
+html[dir="rtl"] .button:hover [data-lucide="arrow-up-right"] {
+  transform: scaleX(-1) translate(0.15rem, -0.15rem);
+}
+
+html[dir="rtl"] .guide-card a.guide-link:hover [data-lucide="arrow-right"] {
+  transform: scaleX(-1) translateX(0.2rem);
+}
+
+html[dir="rtl"] .specimen-tag {
+  inset: auto auto 1.25rem 1.25rem;
+}
+
+html[dir="rtl"] .hero-accent-card {
+  inset: 1.25rem -1.5rem auto auto;
+}
+
+html[dir="rtl"] .feature-hero-media::after {
+  background: linear-gradient(-90deg, rgba(6, 27, 23, 0.92) 0%, rgba(6, 27, 23, 0.35) 60%, rgba(6, 27, 23, 0.15) 100%);
+}
+
+html[dir="rtl"] .search-box input {
+  padding: 0.65rem 2.6rem 0.65rem 1rem;
+}
+html[dir="rtl"] .search-icon {
+  inset-inline-start: auto;
+  inset-inline-end: 0.9rem;
+}
+
+html[dir="rtl"] .footer-column a:hover {
+  transform: translateX(-2px);
+}
+
+html[dir="rtl"] .map-pin {
+  transform: translate(50%, -50%) rotate(-45deg);
+}
+html[dir="rtl"] .map-pin svg {
+  transform: rotate(45deg);
+}
+
+html[dir="rtl"] .card-arrow {
+  inset-inline-start: 1.2rem;
+  inset-inline-end: auto;
+}
+html[dir="rtl"] .product-card:hover .card-arrow svg,
+html[dir="rtl"] .plant-card:hover .card-arrow svg,
+html[dir="rtl"] .equipment-card:hover .card-arrow svg,
+html[dir="rtl"] .arrival-card:hover .card-arrow svg {
+  transform: translate(-2px, -2px) scaleX(-1);
+}
+
