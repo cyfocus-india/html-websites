@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find the right board game by player count, age, mood, and play time with Meeple &amp; Marrow's guided recommendations.">
+  <meta name="theme-color" content="#f5f0e7">
+  <title>Recommendations | Meeple &amp; Marrow</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script defer src="../assets/js/main.js"></script>
+</head>
+<body data-root=".." data-page="recommendations">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container page-hero__inner">
+        <div data-reveal="left">
+          <span class="eyebrow">A gentler way to choose</span>
+          <h1>Start with your table.</h1>
+          <p class="lede">The right game is not the highest-rated one. It is the one that fits your people, your energy, and the evening you actually have.</p>
+          <a class="text-link" href="#game-matcher"><span>Try the game matcher</span><span data-icon="arrow-right"></span></a>
+        </div>
+        <figure class="page-hero__media page-hero__media--square" data-reveal="right">
+          <img src="../assets/images/recommendations-set.webp" alt="Wooden pawns, blank cards, stone tokens, and a twelve-sided die arranged on a warm surface" width="1254" height="1254" fetchpriority="high">
+        </figure>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="players-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">By player count</span><h2 id="players-title">How many chairs?</h2></div>
+          <p class="lede">A brilliant four-player game is not always a brilliant two-player game. Start with the number that will really show up.</p>
+        </div>
+        <div class="recommend-grid" data-reveal-stagger>
+          <article class="recommend-card" data-reveal data-recommend-preset="solo" title="Click to match for 1 player">
+            <span class="recommend-card__number">1</span>
+            <span class="recommend-card__label">Solo player</span>
+            <h3>Quiet adventures</h3>
+            <p>Puzzles, campaigns, and systems that shine without an audience.</p>
+            <span class="recommend-card__pebble" aria-hidden="true"></span>
+          </article>
+          <article class="recommend-card" data-reveal data-recommend-preset="pair" title="Click to match for 2 players">
+            <span class="recommend-card__number">2</span>
+            <span class="recommend-card__label">Players</span>
+            <h3>Made for a pair</h3>
+            <p>Purpose-built duels and cooperative stories with no downtime.</p>
+            <span class="recommend-card__pebble" aria-hidden="true"></span>
+          </article>
+          <article class="recommend-card" data-reveal data-recommend-preset="group" title="Click to match for 3-4 players">
+            <span class="recommend-card__number">3–4</span>
+            <span class="recommend-card__label">Players</span>
+            <h3>The classic table</h3>
+            <p>Rich interaction, generous turns, and the broadest range of choice.</p>
+            <span class="recommend-card__pebble" aria-hidden="true"></span>
+          </article>
+          <article class="recommend-card" data-reveal data-recommend-preset="party" title="Click to match for 5+ players">
+            <span class="recommend-card__number">5+</span>
+            <span class="recommend-card__label">Players</span>
+            <h3>More, the merrier</h3>
+            <p>Social games that stay lively without leaving anyone behind.</p>
+            <span class="recommend-card__pebble" aria-hidden="true"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" aria-labelledby="age-title">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">By age group</span><h2 id="age-title">Meet players where they are.</h2></div></div>
+        <div class="value-grid" data-reveal-stagger>
+          <article class="value-card" data-reveal>
+            <span data-icon="sparkles" data-icon-size="xl"></span>
+            <h3>Kids · Ages 6+</h3>
+            <p>Clear goals, tactile pieces, quick turns, and enough room to surprise the adults.</p>
+            <a class="text-link" href="products.html#family"><span>Explore family games</span><span data-icon="arrow-right"></span></a>
+          </article>
+          <article class="value-card" data-reveal>
+            <span data-icon="compass" data-icon-size="xl"></span>
+            <h3>Teens · Ages 13+</h3>
+            <p>Meaningful choices, expressive worlds, and games that respect growing minds.</p>
+            <a class="text-link" href="products.html#strategy"><span>Explore strategy</span><span data-icon="arrow-right"></span></a>
+          </article>
+          <article class="value-card" data-reveal>
+            <span data-icon="dice" data-icon-size="xl"></span>
+            <h3>Adults · Ages 18+</h3>
+            <p>Longer arcs, sharper negotiation, and themes with room for real depth.</p>
+            <a class="text-link" href="products.html#rpg"><span>Explore RPG items</span><span data-icon="arrow-right"></span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="game-matcher" aria-labelledby="matcher-title">
+      <div class="container">
+        <div class="wizard" data-reveal="scale">
+          <div>
+            <span class="eyebrow">Three questions</span>
+            <h2 id="matcher-title">Find tonight’s game.</h2>
+            <p class="lede">This quick match is a starting point. For a more personal choice, come talk to us in store.</p>
+            <div class="wizard-result" data-recommendation-result tabindex="-1" aria-live="polite"><p>Your recommendation will appear here.</p></div>
+          </div>
+          <form class="form-grid" data-recommender>
+            <div class="field">
+              <label for="players">Who is playing?</label>
+              <select id="players" name="players">
+                <option value="solo">Just me</option>
+                <option value="pair">Two players</option>
+                <option value="group" selected>Three or four</option>
+                <option value="party">Five or more</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mood">What should it feel like?</label>
+              <select id="mood" name="mood">
+                <option value="thoughtful">Thoughtful &amp; strategic</option>
+                <option value="lively">Lively &amp; social</option>
+                <option value="story">Curious &amp; story-rich</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="minutes">How much time do you have?</label>
+              <select id="minutes" name="minutes">
+                <option value="short">Under 45 minutes</option>
+                <option value="medium" selected>About an hour</option>
+                <option value="long">An evening</option>
+              </select>
+            </div>
+            <button class="btn" type="submit"><span>Reveal my match</span><span data-icon="sparkles"></span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+</body>
+</html>
