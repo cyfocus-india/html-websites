@@ -1,0 +1,233 @@
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0f130f;
+  --surface: #151b16;
+  --surface-2: #1b241d;
+  --surface-card: #182019;
+  --ink: #f2efe6;
+  --muted: #a4aca0;
+  --muted-light: #7b8577;
+  --green: #4d7a58;
+  --green-deep: #92ecac;
+  --green-light: #61956e;
+  --sage: #1e2c21;
+  --sage-light: #2c4031;
+  --line: rgba(242, 239, 230, 0.14);
+  --line-strong: rgba(242, 239, 230, 0.45);
+  --danger: #ff8b7b;
+  --danger-bg: #351916;
+  --success: #67cf84;
+  --success-bg: #152b1b;
+  --warning: #f5c065;
+  --warning-bg: #31230e;
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.25);
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 30px 70px rgba(0, 0, 0, 0.65);
+}
+
+html[data-theme="dark"] .site-header {
+  background: color-mix(in srgb, var(--page) 88%, transparent);
+}
+
+html[data-theme="dark"] .brand {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .dropdown-menu {
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .dropdown-link:hover {
+  background: var(--sage);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .dropdown-link[aria-current="page"] {
+  background: var(--green);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .popular-badge {
+  background: var(--ink);
+  color: #0f130f;
+}
+
+html[data-theme="dark"] .status-chip {
+  background: var(--surface-2);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .status-chip--good {
+  background: #193120;
+  color: #92ecac;
+  border-color: #3b7049;
+}
+
+html[data-theme="dark"] .status-chip--alert {
+  background: #3c1916;
+  color: #ff9d90;
+  border-color: #7b312a;
+}
+
+html[data-theme="dark"] .schedule-day {
+  color: #92ecac;
+}
+
+html[data-theme="dark"] .map-frame {
+  filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(90%);
+}
+
+html[data-theme="dark"] .map-overlay-card {
+  background: color-mix(in srgb, var(--surface-2) 92%, transparent);
+}
+
+html[data-theme="dark"] .performer img,
+html[data-theme="dark"] .tutor-card img {
+  filter: grayscale(0.8) brightness(0.9);
+}
+
+html[data-theme="dark"] .performer:hover img,
+html[data-theme="dark"] .tutor-card:hover img {
+  filter: grayscale(0) brightness(1);
+}
+
+html[data-theme="dark"] .calendar-cell--empty {
+  background: var(--surface-2);
+}
+
+html[data-theme="dark"] .calendar-cell--present {
+  background: rgba(77, 122, 88, 0.25);
+}
+
+html[data-theme="dark"] .calendar-cell--absent {
+  background: rgba(230, 80, 60, 0.2);
+}
+
+html[data-theme="dark"] .dashboard-tab {
+  color: var(--muted);
+}
+
+html[data-theme="dark"] .dashboard-tab:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+
+html[data-theme="dark"] .dashboard-tab[aria-selected="true"] {
+  background: var(--green);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .toast {
+  background: var(--surface-2);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+@media (max-width: 1180px) {
+  html[data-theme="dark"] .site-nav {
+    background: var(--page);
+  }
+
+  html[data-theme="dark"] .dropdown-menu {
+    background: var(--surface-2);
+  }
+}
+
+html[data-theme="dark"] .notice {
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .finder {
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .finder .field select {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .site-curtain {
+  background: #0a0e0a;
+}
+
+html[data-theme="dark"] .cta-band .btn:hover {
+  color: var(--green-deep);
+}
+
+html[data-theme="dark"] .price-card.is-featured {
+  background: var(--green);
+  border-color: var(--green-light);
+}
+
+html[data-theme="dark"] .image-caption {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+html[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--page);
+}
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--sage);
+}
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+html[data-theme="dark"] .btn--ghost {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .field input:focus,
+html[data-theme="dark"] .field select:focus,
+html[data-theme="dark"] .field textarea:focus {
+  border-color: var(--green);
+  box-shadow: inset 0 0 0 1px var(--green), 0 0 0 3px rgba(77, 122, 88, 0.25);
+}
+
+html[data-theme="dark"] .data-table thead th {
+  background: var(--green);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .filter-bar {
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+}
+
+html[data-theme="dark"] .filter-btn {
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+html[data-theme="dark"] .filter-btn:hover {
+  background: var(--sage);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .filter-btn.is-active {
+  background: var(--green);
+  color: #ffffff;
+  border-color: var(--green);
+}
+
+html[data-theme="dark"] .accordion-trigger:hover {
+  color: var(--green-deep);
+}
+
+html[data-theme="dark"] .metric-card {
+  background: var(--surface-2);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .panel-card {
+  background: var(--surface-2);
+  border-color: var(--line);
+}
