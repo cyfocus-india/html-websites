@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your Glowé account.">
+  <title>Sign In — Glowé</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body data-page="signin" data-depth="1">
+  <div data-site-header></div>
+  <main id="main-content">
+    <section class="auth-wrap">
+      <div class="auth-art" role="img" aria-label="Glowé skincare collection"></div>
+      <div class="auth-panel">
+        <div class="auth-card" data-reveal>
+          <span class="eyebrow">Account Access</span>
+          <h1>Sign In</h1>
+          <p class="lead">Sign in to revisit your routine and saved favorites.</p>
+          <form data-validate data-success="Demo sign-in validated successfully." novalidate>
+            <div class="field">
+              <label for="signin-email">Email address</label>
+              <input id="signin-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="signin-password">Password</label>
+              <div class="password-wrap">
+                <input id="signin-password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+                <button class="icon-btn password-toggle" type="button" aria-label="Show password"><i data-lucide="eye"></i></button>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:14px;margin:10px 0 22px">
+              <label class="check-row"><input type="checkbox"> Remember me</label>
+              <a class="accent" href="forgot-password.html">Forgot password?</a>
+            </div>
+            <button class="btn btn-coral" style="width:100%" type="submit">Sign In <i data-lucide="arrow-right"></i></button>
+          </form>
+          <p style="text-align:center;margin-top:20px" class="muted">New to Glowé? <a class="accent" href="signup.html">Create an account</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="../assets/js/lucide.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
