@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SolarNest">
-  <defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2e82bb"/><stop offset="1" stop-color="#164d84"/></linearGradient></defs>
-  <circle cx="31" cy="17" r="10" fill="#ffbd22"/>
-  <g stroke="#ffbd22" stroke-width="2.5" stroke-linecap="round"><path d="M31 2v5M31 27v5M16 17h5M41 17h5M20 6l4 4M38 24l4 4M42 6l-4 4M24 24l-4 4"/></g>
-  <path d="M8 50 21 28h31L40 50Z" fill="url(#p)" stroke="#fff" stroke-width="2"/>
-  <path d="m17 42 29 0M21 35h27M27 29l-5 21M37 29l-2 21M47 29l1 13" stroke="#fff" stroke-width="1.5" opacity=".85"/>
-  <path d="M40 52c2-10 9-15 17-15-1 10-7 16-17 15Z" fill="#2f9631"/>
-</svg>
