@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <!-- Challenge Zone (9-12 Years) - Kid navigating obstacle tunnel / rope gym -->
+  <defs>
+    <radialGradient id="bgChallenge" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bgChallenge)"/>
+
+  <!-- Play Gym Structure Poles & Ropes -->
+  <rect x="25" y="0" width="20" height="300" fill="#EF4444"/>
+  <rect x="255" y="0" width="20" height="300" fill="#F59E0B"/>
+  <rect x="25" y="30" width="250" height="15" fill="#3B82F6"/>
+
+  <!-- Hanging Obstacle Ropes -->
+  <line x1="75" y1="45" x2="75" y2="260" stroke="#047857" stroke-width="8"/>
+  <line x1="125" y1="45" x2="125" y2="260" stroke="#047857" stroke-width="8"/>
+  <line x1="175" y1="45" x2="175" y2="260" stroke="#047857" stroke-width="8"/>
+  <line x1="225" y1="45" x2="225" y2="260" stroke="#047857" stroke-width="8"/>
+
+  <!-- Stepping Rings -->
+  <ellipse cx="75" cy="240" rx="20" ry="8" fill="#FBBF24"/>
+  <ellipse cx="125" cy="220" rx="20" ry="8" fill="#F87171"/>
+  <ellipse cx="175" cy="235" rx="20" ry="8" fill="#60A5FA"/>
+  <ellipse cx="225" cy="215" rx="20" ry="8" fill="#34D399"/>
+
+  <!-- Kid (Boy in Olive Green Shirt, Jeans, Smiling) in Obstacle -->
+  <!-- Legs balancing on rings -->
+  <path d="M 125 180 L 115 220" stroke="#1E3A8A" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 155 180 L 175 235" stroke="#1E3A8A" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="112" cy="225" rx="10" ry="6" fill="#111827"/>
+  <ellipse cx="178" cy="240" rx="10" ry="6" fill="#111827"/>
+
+  <!-- Torso (Olive Green T-shirt) -->
+  <path d="M 120 120 L 165 120 L 160 185 L 125 185 Z" fill="#4D7C0F"/>
+
+  <!-- Arms holding onto ropes -->
+  <path d="M 125 130 L 75 110" stroke="#FDE2D0" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="75" cy="110" r="8" fill="#FDE2D0"/>
+
+  <path d="M 160 130 L 225 110" stroke="#FDE2D0" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="225" cy="110" r="8" fill="#FDE2D0"/>
+
+  <!-- Head -->
+  <circle cx="145" cy="85" r="26" fill="#FDE2D0"/>
+
+  <!-- Boy Haircut -->
+  <path d="M 122 80 Q 145 55 168 80 Q 145 68 122 80 Z" fill="#292524"/>
+
+  <!-- Happy Confident Face -->
+  <ellipse cx="137" cy="84" rx="3.5" ry="4.5" fill="#111827"/>
+  <ellipse cx="153" cy="84" rx="3.5" ry="4.5" fill="#111827"/>
+  <path d="M 139 96 Q 145 104 151 96" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

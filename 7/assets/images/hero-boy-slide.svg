@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="slideGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD11A"/>
+      <stop offset="50%" stop-color="#F5B300"/>
+      <stop offset="100%" stop-color="#DE9700"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EEF4FF"/>
+      <stop offset="100%" stop-color="#D6E4FF"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D5BE1"/>
+      <stop offset="100%" stop-color="#1A6DF5"/>
+    </linearGradient>
+    <clipPath id="archMask">
+      <path d="M 0 250 A 250 250 0 0 1 500 250 L 500 600 L 0 600 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Arch Frame Background -->
+  <g clip-path="url(#archMask)">
+    <rect width="500" height="600" fill="url(#skyGrad)"/>
+
+    <!-- Indoor Play Structure Frame Behind -->
+    <rect x="50" y="80" width="80" height="340" rx="15" fill="#E52E2E"/>
+    <rect x="370" y="80" width="80" height="340" rx="15" fill="#0D5BE1"/>
+    <rect x="110" y="60" width="280" height="40" rx="10" fill="#F5B300"/>
+    <!-- Safety Netting / Grid -->
+    <path d="M 60 120 L 440 120 M 60 160 L 440 160 M 60 200 L 440 200 M 60 240 L 440 240" stroke="#FFFFFF" stroke-width="3" opacity="0.4"/>
+    <path d="M 100 80 L 100 280 M 150 80 L 150 280 M 200 80 L 200 280 M 250 80 L 250 280 M 300 80 L 300 280 M 350 80 L 350 280 M 400 80 L 400 280" stroke="#FFFFFF" stroke-width="3" opacity="0.4"/>
+
+    <!-- Huge Yellow Slide -->
+    <path d="M 120 220 Q 250 290 280 430 Q 300 520 250 600 L 50 600 Q 150 480 140 370 Q 130 290 80 240 Z" fill="url(#slideGrad)"/>
+    <!-- Slide Rails / Curves -->
+    <path d="M 120 220 Q 250 290 280 430 Q 300 520 250 600" fill="none" stroke="#FFA700" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 80 240 Q 130 290 140 370 Q 150 480 50 600" fill="none" stroke="#FFA700" stroke-width="22" stroke-linecap="round"/>
+
+    <!-- Happy Kid on Slide (Striped Blue Shirt, Yellow Pants, Curly Hair, Smiling) -->
+    <!-- Shadow -->
+    <ellipse cx="250" cy="460" rx="60" ry="20" fill="#B38600" opacity="0.4"/>
+
+    <!-- Pants (Bright Yellow/Gold Pants) -->
+    <path d="M 210 400 L 290 400 L 310 470 L 270 480 L 250 430 L 230 480 L 190 470 Z" fill="#E59B00"/>
+
+    <!-- Striped Shirt Body -->
+    <path d="M 200 280 L 300 280 L 310 400 L 190 400 Z" fill="url(#shirtGrad)"/>
+    <!-- White Stripes on Shirt -->
+    <rect x="198" y="300" width="104" height="12" fill="#FFFFFF"/>
+    <rect x="194" y="325" width="112" height="12" fill="#FFFFFF"/>
+    <rect x="192" y="350" width="116" height="12" fill="#FFFFFF"/>
+    <rect x="190" y="375" width="120" height="12" fill="#FFFFFF"/>
+
+    <!-- Arms Holding Rails -->
+    <!-- Left Arm -->
+    <path d="M 200 290 Q 150 310 135 340" fill="none" stroke="#FBC8A8" stroke-width="26" stroke-linecap="round"/>
+    <!-- Right Arm -->
+    <path d="M 300 290 Q 350 310 365 340" fill="none" stroke="#FBC8A8" stroke-width="26" stroke-linecap="round"/>
+
+    <!-- Kid's Head & Happy Face -->
+    <ellipse cx="250" cy="220" rx="48" ry="52" fill="#FBC8A8"/>
+
+    <!-- Big Happy Smile -->
+    <path d="M 230 236 Q 250 262 270 236" fill="#C52020" stroke="#900" stroke-width="2"/>
+    <path d="M 233 238 Q 250 248 267 238" fill="#FFFFFF"/> <!-- Teeth -->
+
+    <!-- Cute Cheeks -->
+    <ellipse cx="225" cy="230" rx="8" ry="6" fill="#FF8E8E" opacity="0.6"/>
+    <ellipse cx="275" cy="230" rx="8" ry="6" fill="#FF8E8E" opacity="0.6"/>
+
+    <!-- Eyes -->
+    <ellipse cx="233" cy="210" rx="5" ry="7" fill="#2C1B18"/>
+    <ellipse cx="267" cy="210" rx="5" ry="7" fill="#2C1B18"/>
+    <circle cx="235" cy="208" r="2" fill="#FFFFFF"/>
+    <circle cx="269" cy="208" r="2" fill="#FFFFFF"/>
+
+    <!-- Eyebrows -->
+    <path d="M 225 198 Q 235 192 243 198" fill="none" stroke="#4A2E18" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 257 198 Q 265 192 275 198" fill="none" stroke="#4A2E18" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <circle cx="250" cy="222" r="3.5" fill="#E29E7D"/>
+
+    <!-- Curly Brunette Hair -->
+    <g fill="#4A2E18">
+      <circle cx="215" cy="180" r="22"/>
+      <circle cx="240" cy="165" r="24"/>
+      <circle cx="268" cy="168" r="22"/>
+      <circle cx="290" cy="185" r="20"/>
+      <circle cx="205" cy="205" r="18"/>
+      <circle cx="295" cy="210" r="18"/>
+      <circle cx="230" cy="155" r="18"/>
+      <circle cx="255" cy="155" r="19"/>
+    </g>
+
+    <!-- Shoes -->
+    <ellipse cx="210" cy="510" rx="24" ry="15" fill="#0D5BE1"/>
+    <ellipse cx="290" cy="510" rx="24" ry="15" fill="#0D5BE1"/>
+    <rect x="195" y="520" width="30" height="6" rx="3" fill="#FFFFFF"/>
+    <rect x="275" y="520" width="30" height="6" rx="3" fill="#FFFFFF"/>
+  </g>
+</svg>
