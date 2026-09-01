@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a Pawfolk customer account to save favorites, earn pack rewards, and manage grooming visits.">
+  <title>Pawfolk | Sign Up</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script>try{const t=localStorage.getItem('pawfolk-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dir=localStorage.getItem('pawfolk-direction')||'ltr'}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#signup-name">Skip to sign up form</a>
+  <main class="auth-shell">
+    <section class="auth-art" style="background:var(--coral)">
+      <a class="brand" href="../index.html" aria-label="Pawfolk home">
+        <span class="brand__mark" aria-hidden="true"><span class="brand__eyes"></span></span>
+        <span>Pawfolk</span>
+      </a>
+      <div class="auth-mascot" aria-hidden="true" style="background:var(--mint);color:var(--ink)">
+        <i class="fa-solid fa-cat"></i>
+      </div>
+      <div>
+        <p class="lead"><strong>A small account with useful perks.</strong></p>
+        <p>Save favorites, track appointments, and celebrate every pet birthday with special treats.</p>
+      </div>
+    </section>
+
+    <section class="auth-form-wrap">
+      <form class="auth-form" data-validate data-success="Account created! Welcome to the Pawfolk pack." novalidate>
+        <div class="nav-actions">
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme"></button>
+          <button class="icon-btn" type="button" data-dir-toggle aria-label="Switch text direction">RTL</button>
+          <a class="btn btn--paper btn--sm" href="../index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a>
+        </div>
+
+        <p class="eyebrow">New around here?</p>
+        <h1>Join the pack.</h1>
+        <p class="lead muted" style="margin-bottom:24px">Already a member? <a class="text-link" href="signin.html">Sign in</a></p>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="signup-name">Your Full Name</label>
+            <input class="field" id="signup-name" autocomplete="name" placeholder="Jamie Rivers" required>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-pet">Pet’s Name <span class="muted">(optional)</span></label>
+            <input class="field" id="signup-pet" placeholder="Barnaby">
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="signup-email">Email Address</label>
+            <input class="field" id="signup-email" type="email" autocomplete="email" placeholder="jamie@example.com" required>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="signup-password">Password (min 8 characters)</label>
+            <div class="password-wrap">
+              <input class="field" id="signup-password" type="password" autocomplete="new-password" minlength="8" placeholder="••••••••" required>
+              <button class="password-toggle-btn" type="button" aria-label="Toggle password visibility"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label class="checkbox">
+              <input type="checkbox" required>
+              <span>I agree to the Pawfolk <a class="text-link" href="terms.html">Terms</a> and <a class="text-link" href="privacy.html">Privacy notice</a>.</span>
+              <span class="field-error" aria-live="polite"></span>
+            </label>
+          </div>
+
+          <div class="form-group form-group--full">
+            <button class="btn btn--blue btn--full" type="submit">Create Account <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
