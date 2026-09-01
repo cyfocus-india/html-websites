@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home 2 — CareWell home nursing and personal patient care support." />
+    <title>Home 2 — CareWell</title>
+    <link rel="icon" href="assets/images/carewell-favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/refinement.css" />
+    <link rel="stylesheet" href="assets/css/enhancements.css" />
+  </head>
+  <body class="inner-body">
+    <svg class="svg-sprite" style="display:none" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 12h2l1-2.3 2 4.6 1.1-2.3h1.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8zM9 8V5a3 3 0 0 1 6 0v3M12 11v6M9 14h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-walk" viewBox="0 0 24 24"><circle cx="14" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10 21 2-6-3-3 2-5 4 3 3 1M14 12l-2 3 5 6M8 8 5 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-bandage" viewBox="0 0 24 24"><path d="m8.5 3.5 12 12a3.54 3.54 0 0 1-5 5l-12-12a3.54 3.54 0 0 1 5-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m14 9-5 5M9.5 7.5h.01M16.5 14.5h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-pill" viewBox="0 0 24 24"><path d="m10.5 20.5-7-7a4.95 4.95 0 0 1 7-7l7 7a4.95 4.95 0 0 1-7 7zM7 17l10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    </svg>
+
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="nav-shell glass">
+        <a class="brand page-link" href="index.html" aria-label="CareWell home">
+          <span class="brand-mark"><svg viewBox="0 0 42 38"><path d="M21 35C14 29 3 21 3 11.6 3 4.2 12.3.2 18 6.8L21 10l3-3.2C29.7.2 39 4.2 39 11.6 39 21 28 29 21 35Z"/><path class="brand-line" d="M12.5 12c3-3.3 6.2-.8 6.2 2.1 0 4.4-1.6 7.7 2.3 12.2 3.8-4.4 2.2-7.8 2.2-12.2 0-3 3.3-5.4 6.3-2.1"/><circle class="brand-dot" cx="21" cy="9" r="2.3"/></svg></span>
+          <span><strong>CareWell</strong><small>HOME NURSING</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation"></nav>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg class="menu-icon"><use href="#i-menu"/></svg>
+          <svg class="close-icon"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav glass" aria-label="Mobile navigation"></nav>
+    </header>
+
+    <main class="home2-main">
+      <!-- Alt Hero Section -->
+      <section class="alt-hero glass reveal">
+        <div class="alt-image"><img src="assets/images/carewell-hero.png" alt="Home nurse supporting an older patient" /></div>
+        <div class="alt-copy">
+          <span class="eyebrow"><span></span>Home 2</span>
+          <h1>Feel Better.<br /><em>Live Independently.</em></h1>
+          <p>Thoughtful home nursing, companionship, and recovery support delivered by qualified caregivers who treat your family like their own.</p>
+          <div class="alt-actions">
+            <a class="button button-primary page-link" href="pages/contact.html">Plan My Care <span>→</span></a>
+            <a class="button button-secondary page-link" href="pages/services.html">Explore Services</a>
+          </div>
+          <div class="mini-proof">
+            <div><strong>5+</strong><span>Years average experience</span></div>
+            <div><strong>200+</strong><span>Trained caregivers</span></div>
+            <div><strong>24/7</strong><span>Care coordination</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Value Pillars Section -->
+      <section class="content-section glass reveal">
+        <div class="content-heading">
+          <span>Care without compromise</span>
+          <h2>Support for every stage of the journey</h2>
+          <p>Choose focused recovery support, ongoing daily assistance, or flexible visits as your needs change.</p>
+        </div>
+        <div class="value-grid">
+          <!-- Card 1: Recovery Care -->
+          <article class="value-card" style="--card-accent:#25a55f;--card-tint:#e9faef;">
+            <div class="value-card-top">
+              <span class="detail-icon"><svg><use href="#i-bandage"/></svg></span>
+            </div>
+            <div class="value-card-body">
+              <h3>Recover with confidence</h3>
+              <p>Structured post-surgery and rehabilitation support that helps you return to your routine safely.</p>
+            </div>
+            <a class="text-link page-link" href="pages/services.html">Recovery care <span>→</span></a>
+          </article>
+
+          <!-- Card 2: Companion Care -->
+          <article class="value-card" style="--card-accent:#7355df;--card-tint:#f0ebff;">
+            <div class="value-card-top">
+              <span class="detail-icon"><svg><use href="#i-users"/></svg></span>
+            </div>
+            <div class="value-card-body">
+              <h3>Stay connected</h3>
+              <p>Warm companionship, meal support, errands, and meaningful conversation throughout the week.</p>
+            </div>
+            <a class="text-link page-link" href="pages/services.html">Companion care <span>→</span></a>
+          </article>
+
+          <!-- Card 3: Secure Home Care -->
+          <article class="value-card" style="--card-accent:#2d78ff;--card-tint:#e9f2ff;">
+            <div class="value-card-top">
+              <span class="detail-icon"><svg><use href="#i-shield"/></svg></span>
+            </div>
+            <div class="value-card-body">
+              <h3>Feel secure at home</h3>
+              <p>Reliable medication reminders, mobility help, and family updates from a trusted professional.</p>
+            </div>
+            <a class="text-link page-link" href="pages/caregivers.html">Meet caregivers <span>→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Trust Bar Section -->
+      <section class="support-section glass reveal">
+        <div class="support-heading">
+          <span>Why CareWell</span>
+          <h2>A dependable care team, always within reach</h2>
+          <p>Every caregiver is screened, trained, insured, and supported by our care coordination team.</p>
+        </div>
+        <div class="feature-row">
+          <article><strong>100%</strong><span>Background verified</span></article>
+          <article><strong>Flexible</strong><span>Visits and schedules</span></article>
+          <article><strong>Personal</strong><span>Care plans and updates</span></article>
+          <article><strong>24/7</strong><span>Family support line</span></article>
+        </div>
+      </section>
+
+      <!-- NEW SECTION 1 FOR HOME 2: Testimonials & Family Stories -->
+      <section class="content-section glass reveal" id="testimonials">
+        <div class="content-heading">
+          <span>Trusted by our community</span>
+          <h2>What Families Say About CareWell</h2>
+          <p>Read how our nurses and caregivers bring comfort, dignity, and peace of mind into homes every day.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"CareWell made my mother's post-surgery recovery so much smoother than we expected. Nurse Sarah was patient, attentive, and treated our family like her own."</p>
+            <div class="testimonial-person">
+              <span>DM</span>
+              <div><strong>David Miller</strong><small>Son of Patient</small></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Finding trustworthy companion care for my father was stressful until we contacted CareWell. He looks forward to his daily walks and visits every week."</p>
+            <div class="testimonial-person">
+              <span>ER</span>
+              <div><strong>Elena Rodriguez</strong><small>Family Caregiver</small></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"The daily care notes and medication reminders gave our family complete peace of mind. Knowing a skilled caregiver is there is priceless."</p>
+            <div class="testimonial-person">
+              <span>MT</span>
+              <div><strong>Marcus Thompson</strong><small>Client</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- NEW SECTION 2 FOR HOME 2: Frequently Asked Questions -->
+      <section class="content-section glass reveal" id="faq">
+        <div class="content-heading">
+          <span>Got questions?</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about setting up personalized care with CareWell.</p>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <strong>How quickly can home nursing services begin?</strong>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>In most cases, care can begin within 24 to 48 hours following your initial consultation and home assessment. For urgent post-discharge needs, same-day arrangements are often possible.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <strong>Can we change our care hours or schedule as needs evolve?</strong>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. All CareWell plans are completely flexible. Whether you need to increase nursing visits or transition to companion care, our coordinators adapt your schedule with no penalties.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <strong>Are your nurses and caregivers licensed and insured?</strong>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, 100% of our care team is fully licensed (RN, LPN, CNA), CPR-certified, background-verified, insured, and bonded under our strict clinical standards.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <strong>How do families stay informed about daily care?</strong>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We provide transparent daily digital logs covering vitals, medication adherence, nutrition, and activities. You also have 24/7 phone access to your dedicated care manager.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="care-cta-strip glass-soft" style="margin-top: 32px;">
+          <div class="cta-copy">
+            <h3>Have more questions about our services?</h3>
+            <p>Speak with a friendly care specialist who can guide you through every detail.</p>
+          </div>
+          <div class="cta-btns">
+            <a class="button button-primary page-link" href="pages/contact.html">Contact Care Team <span>→</span></a>
+            <a class="button button-secondary page-link" href="pages/services.html">View Services</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
