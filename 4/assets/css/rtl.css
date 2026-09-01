@@ -1,0 +1,118 @@
+/*
+  Pawfolk — RTL (Right-to-Left) Stylesheet
+  Mirrored layouts, drawers, badges, and typography alignment.
+*/
+
+html[dir="rtl"] body {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav-link::after {
+  transform-origin: right;
+}
+
+html[dir="rtl"] .hero__image-wrap,
+html[dir="rtl"] .story-visual img,
+html[dir="rtl"] .product-shape {
+  transform: scaleX(-1) rotate(1deg);
+}
+
+html[dir="rtl"] .story-visual img {
+  transform: scaleX(-1) rotate(-1deg);
+}
+
+html[dir="rtl"] .hero__sticker {
+  transform: rotate(9deg);
+}
+
+html[dir="rtl"] .cart-drawer {
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+  border-inline-start: 0;
+  border-inline-end: var(--line);
+  transform: translateX(-105%);
+}
+
+html[dir="rtl"] .cart-drawer.is-open {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .cart-item {
+  text-align: right;
+}
+
+html[dir="rtl"] .check-list li::before {
+  margin-inline: 0;
+}
+
+html[dir="rtl"] .journal-card picture,
+html[dir="rtl"] .journal-card > .journal-card__image {
+  border-inline-end: 0;
+  border-inline-start: var(--line);
+}
+
+html[dir="rtl"] [data-reveal="left"] {
+  transform: translateX(30px);
+}
+
+html[dir="rtl"] [data-reveal="right"] {
+  transform: translateX(-30px);
+}
+
+@media (max-width: 820px) {
+  html[dir="rtl"] [data-reveal="left"],
+  html[dir="rtl"] [data-reveal="right"] {
+    transform: translateY(20px);
+  }
+}
+
+html[dir="rtl"] .shop-search-wrap i {
+  inset-inline-start: auto;
+  inset-inline-end: 14px;
+}
+
+html[dir="rtl"] .shop-search-input {
+  padding: 8px 38px 8px 14px;
+}
+
+html[dir="rtl"] .password-wrap .field {
+  padding-inline-end: 18px;
+  padding-inline-start: 48px;
+}
+
+html[dir="rtl"] .password-toggle-btn {
+  inset-inline-end: auto;
+  inset-inline-start: 12px;
+}
+
+html[dir="rtl"] .modal__close {
+  inset-inline-end: auto;
+  inset-inline-start: 20px;
+}
+
+html[dir="rtl"] .text-link:hover,
+html[dir="rtl"] .footer-links a:hover,
+html[dir="rtl"] .nav-dropdown-link:hover,
+html[dir="rtl"] .nav-dropdown-link[aria-current="page"] {
+  transform: translateX(-3px);
+}
+
+@media (max-width: 1100px) {
+  html[dir="rtl"] .nav-list {
+    text-align: right;
+  }
+
+  html[dir="rtl"] .nav-dropdown {
+    border-inline-start: none;
+    border-inline-end: 3px solid var(--blue);
+    padding: 8px 14px 12px 0;
+    margin: 4px 8px 10px 0;
+  }
+}
+
+/* --- Mobile nav drawer RTL --- */
+html[dir="rtl"] .nav-list.is-open {
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+}
